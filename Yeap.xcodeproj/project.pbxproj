@@ -97,6 +97,9 @@
 		BC91131E22F8F85600383393 /* Yeap */ = {
 			isa = PBXGroup;
 			children = (
+				BC91134F22F8F90800383393 /* Controllers */,
+				BC91134E22F8F90200383393 /* Views */,
+				BC91134D22F8F8F600383393 /* Models */,
 				BC91131F22F8F85600383393 /* AppDelegate.swift */,
 				BC91132122F8F85600383393 /* ViewController.swift */,
 				BC91132322F8F85600383393 /* Main.storyboard */,
@@ -123,6 +126,27 @@
 				BC91134122F8F85800383393 /* Info.plist */,
 			);
 			path = YeapUITests;
+			sourceTree = "<group>";
+		};
+		BC91134D22F8F8F600383393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC91134E22F8F90200383393 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC91134F22F8F90800383393 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
