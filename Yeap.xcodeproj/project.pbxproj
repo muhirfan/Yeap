@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3965891122F9879E008B7C63 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891022F9879E008B7C63 /* colors.swift */; };
 		BC91132022F8F85600383393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91131F22F8F85600383393 /* AppDelegate.swift */; };
 		BC91132222F8F85600383393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91132122F8F85600383393 /* ViewController.swift */; };
 		BC91132522F8F85600383393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC91132322F8F85600383393 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3965891022F9879E008B7C63 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = SOURCE_ROOT; };
 		BC91131C22F8F85600383393 /* Yeap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC91131F22F8F85600383393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC91132122F8F85600383393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		BC91134D22F8F8F600383393 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3965891022F9879E008B7C63 /* colors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC91132222F8F85600383393 /* ViewController.swift in Sources */,
+				3965891122F9879E008B7C63 /* colors.swift in Sources */,
 				BC91132022F8F85600383393 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
