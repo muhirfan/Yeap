@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3965891122F9879E008B7C63 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891022F9879E008B7C63 /* colors.swift */; };
+		3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891422FAA925008B7C63 /* JourneyViewController.swift */; };
+		3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */; };
+		3965891922FAA968008B7C63 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891822FAA968008B7C63 /* StoryViewController.swift */; };
 		BC91132022F8F85600383393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91131F22F8F85600383393 /* AppDelegate.swift */; };
-		BC91132222F8F85600383393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91132122F8F85600383393 /* ViewController.swift */; };
 		BC91132522F8F85600383393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC91132322F8F85600383393 /* Main.storyboard */; };
 		BC91132722F8F85800383393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC91132622F8F85800383393 /* Assets.xcassets */; };
 		BC91132A22F8F85800383393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC91132822F8F85800383393 /* LaunchScreen.storyboard */; };
@@ -36,9 +38,11 @@
 
 /* Begin PBXFileReference section */
 		3965891022F9879E008B7C63 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = SOURCE_ROOT; };
+		3965891422FAA925008B7C63 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskViewController.swift; sourceTree = "<group>"; };
+		3965891822FAA968008B7C63 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		BC91131C22F8F85600383393 /* Yeap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC91131F22F8F85600383393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC91132122F8F85600383393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC91132422F8F85600383393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC91132622F8F85800383393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC91132922F8F85800383393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,7 +107,6 @@
 				BC91134E22F8F90200383393 /* Views */,
 				BC91134D22F8F8F600383393 /* Models */,
 				BC91131F22F8F85600383393 /* AppDelegate.swift */,
-				BC91132122F8F85600383393 /* ViewController.swift */,
 				BC91132322F8F85600383393 /* Main.storyboard */,
 				BC91132622F8F85800383393 /* Assets.xcassets */,
 				BC91132822F8F85800383393 /* LaunchScreen.storyboard */,
@@ -148,6 +151,9 @@
 		BC91134F22F8F90800383393 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3965891822FAA968008B7C63 /* StoryViewController.swift */,
+				3965891422FAA925008B7C63 /* JourneyViewController.swift */,
+				3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -283,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC91132222F8F85600383393 /* ViewController.swift in Sources */,
+				3965891922FAA968008B7C63 /* StoryViewController.swift in Sources */,
+				3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */,
+				3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */,
 				3965891122F9879E008B7C63 /* colors.swift in Sources */,
 				BC91132022F8F85600383393 /* AppDelegate.swift in Sources */,
 			);
