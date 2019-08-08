@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390064AB22FBC28A004189E6 /* NameSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390064A922FBC28A004189E6 /* NameSettingTableViewCell.swift */; };
+		390064AC22FBC28A004189E6 /* NameSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390064AA22FBC28A004189E6 /* NameSettingTableViewCell.xib */; };
+		390064AE22FBCD41004189E6 /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390064AD22FBCD41004189E6 /* camera.swift */; };
+		390064F522FBF3F7004189E6 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390064F322FBF3F7004189E6 /* PickerTableViewCell.swift */; };
+		390064F622FBF3F7004189E6 /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */; };
+		390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */; };
+		390064FA22FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */; };
 		3965891122F9879E008B7C63 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891022F9879E008B7C63 /* colors.swift */; };
 		3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891422FAA925008B7C63 /* JourneyViewController.swift */; };
 		3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */; };
@@ -45,14 +52,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390064A922FBC28A004189E6 /* NameSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NameSettingTableViewCell.swift; path = Yeap/Views/NameSettingTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		390064AA22FBC28A004189E6 /* NameSettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NameSettingTableViewCell.xib; path = Yeap/Views/NameSettingTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		390064AD22FBCD41004189E6 /* camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = camera.swift; path = Yeap/camera.swift; sourceTree = SOURCE_ROOT; };
+		390064F322FBF3F7004189E6 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
+		390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableLabelButtonTableViewCell.swift; sourceTree = "<group>"; };
+		390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReuseableLabelButtonTableViewCell.xib; sourceTree = "<group>"; };
 		3965891022F9879E008B7C63 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = SOURCE_ROOT; };
 		3965891422FAA925008B7C63 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskViewController.swift; sourceTree = "<group>"; };
 		3965891A22FAAE67008B7C63 /* StoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewController.swift; sourceTree = "<group>"; };
-		3965891E22FAAEFA008B7C63 /* firstCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstCellTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		3965891F22FAAEFA008B7C63 /* firstCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firstCellTableViewCell.xib; sourceTree = SOURCE_ROOT; };
-		3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		3965891E22FAAEFA008B7C63 /* firstCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = firstCellTableViewCell.swift; path = Yeap/Views/firstCellTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3965891F22FAAEFA008B7C63 /* firstCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = firstCellTableViewCell.xib; path = Yeap/Views/firstCellTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryTableViewCell.swift; path = Yeap/Views/StoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StoryTableViewCell.xib; path = Yeap/Views/StoryTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		3965892622FABA0B008B7C63 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		BC02E18022FC06D5007FB216 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyTaskCollectionViewCell.swift; path = Yeap/DailyTaskCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -159,6 +173,7 @@
 				3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */,
 				3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */,
 				BC04224322FAB3D200D10B07 /* Task.swift */,
+				390064AD22FBCD41004189E6 /* camera.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +182,16 @@
 			isa = PBXGroup;
 			children = (
 				BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */,
+				3965891E22FAAEFA008B7C63 /* firstCellTableViewCell.swift */,
+				3965891F22FAAEFA008B7C63 /* firstCellTableViewCell.xib */,
+				3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */,
+				3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */,
+				390064A922FBC28A004189E6 /* NameSettingTableViewCell.swift */,
+				390064AA22FBC28A004189E6 /* NameSettingTableViewCell.xib */,
+				390064F322FBF3F7004189E6 /* PickerTableViewCell.swift */,
+				390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */,
+				390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */,
+				390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,9 +313,12 @@
 			files = (
 				BC91132A22F8F85800383393 /* LaunchScreen.storyboard in Resources */,
 				BC91132722F8F85800383393 /* Assets.xcassets in Resources */,
+				390064F622FBF3F7004189E6 /* PickerTableViewCell.xib in Resources */,
 				3965892122FAAEFA008B7C63 /* firstCellTableViewCell.xib in Resources */,
 				3965892522FAAF37008B7C63 /* StoryTableViewCell.xib in Resources */,
+				390064FA22FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib in Resources */,
 				BC91132522F8F85600383393 /* Main.storyboard in Resources */,
+				390064AC22FBC28A004189E6 /* NameSettingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390064AB22FBC28A004189E6 /* NameSettingTableViewCell.swift in Sources */,
 				3965892722FABA0B008B7C63 /* SettingTableViewController.swift in Sources */,
+				390064F522FBF3F7004189E6 /* PickerTableViewCell.swift in Sources */,
+				390064AE22FBCD41004189E6 /* camera.swift in Sources */,
 				3965891B22FAAE67008B7C63 /* StoryTableViewController.swift in Sources */,
+				390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */,
 				3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */,
 				3965892022FAAEFA008B7C63 /* firstCellTableViewCell.swift in Sources */,
 				3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */,
@@ -501,6 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59G66T9GCN;
 				INFOPLIST_FILE = Yeap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,6 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59G66T9GCN;
 				INFOPLIST_FILE = Yeap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
