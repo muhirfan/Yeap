@@ -36,11 +36,11 @@
         <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="story" inverseEntity="Account" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Account" positionX="200.515625" positionY="-71.86328125" width="128" height="133"/>
-        <element name="Story" positionX="-33.8125" positionY="35.60546875" width="128" height="103"/>
-        <element name="Journey" positionX="384.53515625" positionY="-195.375" width="128" height="103"/>
-        <element name="Goal" positionX="584.953125" positionY="-59.86328125" width="131.5078125" height="88"/>
-        <element name="Challenge" positionX="392.86328125" positionY="123.63671875" width="128" height="103"/>
+        <element name="Account" positionX="200.515625" positionY="-71.86328125" width="128" height="135"/>
         <element name="Advisor" positionX="108.4609375" positionY="217.91015625" width="128" height="73"/>
+        <element name="Challenge" positionX="392.86328125" positionY="123.63671875" width="128" height="103"/>
+        <element name="Goal" positionX="584.953125" positionY="-59.86328125" width="131.5078125" height="88"/>
+        <element name="Journey" positionX="384.53515625" positionY="-195.375" width="128" height="105"/>
+        <element name="Story" positionX="-33.8125" positionY="35.60546875" width="128" height="103"/>
     </elements>
 </model>
