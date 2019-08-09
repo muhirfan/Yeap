@@ -73,7 +73,7 @@
                                         <connections>
                                             <outlet property="taskImageView" destination="nFY-az-OcW" id="tWC-uM-GgK"/>
                                             <outlet property="taskLabel" destination="Y8U-b4-rYL" id="0wq-HH-QDt"/>
-                                            <segue destination="Ssd-n1-47V" kind="presentation" id="l66-GY-nii"/>
+                                            <segue destination="tPS-co-Zni" kind="presentation" id="l66-GY-nii"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -118,37 +118,37 @@
         <!--Submit Challenge-->
         <scene sceneID="QnY-JR-thc">
             <objects>
-                <viewController id="Ssd-n1-47V" userLabel="Submit Challenge" sceneMemberID="viewController">
+                <viewController title="Write a Story" id="Ssd-n1-47V" userLabel="Submit Challenge" customClass="SubmitChallengeViewController" customModule="Yeap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J0y-ei-rlz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q8y-H2-SpV">
-                                <rect key="frame" x="24" y="68" width="366" height="488"/>
+                                <rect key="frame" x="24" y="112" width="366" height="488"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Q8y-H2-SpV" secondAttribute="height" multiplier="3:4" id="9Qj-9t-K7j"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 23th 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-dT-fzL">
-                                <rect key="frame" x="24" y="580" width="122.5" height="21"/>
+                                <rect key="frame" x="24" y="624" width="122.5" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Do you want to share?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mly-UL-7d9">
-                                <rect key="frame" x="24" y="604.5" width="215" height="21"/>
+                                <rect key="frame" x="24" y="648.5" width="215" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4lY-cz-ozr">
-                                <rect key="frame" x="24" y="638" width="366" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pul-Dp-tQl">
+                                <rect key="frame" x="24" y="677" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -156,19 +156,28 @@
                             <constraint firstItem="Q8y-H2-SpV" firstAttribute="top" secondItem="Lh4-bt-zCY" secondAttribute="top" constant="24" id="KXB-Jz-XoB"/>
                             <constraint firstItem="mly-UL-7d9" firstAttribute="leading" secondItem="Nyv-dT-fzL" secondAttribute="leading" id="N1x-QF-4Lb"/>
                             <constraint firstItem="Nyv-dT-fzL" firstAttribute="top" secondItem="Q8y-H2-SpV" secondAttribute="bottom" constant="24" id="PdQ-c9-fj5"/>
-                            <constraint firstItem="Lh4-bt-zCY" firstAttribute="trailing" secondItem="4lY-cz-ozr" secondAttribute="trailing" constant="24" id="Uyi-21-Agc"/>
-                            <constraint firstItem="4lY-cz-ozr" firstAttribute="top" secondItem="mly-UL-7d9" secondAttribute="bottom" constant="24" id="XNa-Aa-XdX"/>
                             <constraint firstItem="mly-UL-7d9" firstAttribute="firstBaseline" secondItem="Nyv-dT-fzL" secondAttribute="baseline" constant="24" id="Znl-Ef-lNk"/>
                             <constraint firstItem="Q8y-H2-SpV" firstAttribute="leading" secondItem="Lh4-bt-zCY" secondAttribute="leading" constant="24" id="cqc-SY-XaP"/>
-                            <constraint firstItem="4lY-cz-ozr" firstAttribute="leading" secondItem="Lh4-bt-zCY" secondAttribute="leading" constant="24" id="k0U-XA-HMP"/>
                             <constraint firstItem="Nyv-dT-fzL" firstAttribute="leading" secondItem="Q8y-H2-SpV" secondAttribute="leading" id="zin-a1-Ee4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lh4-bt-zCY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Write a Story" leftItemsSupplementBackButton="YES" id="YKy-kG-5TI">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XRX-jV-Fls">
+                            <connections>
+                                <action selector="onCancelClicked:" destination="Ssd-n1-47V" id="JtN-o1-Iu3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Xo3-zG-Feb">
+                            <connections>
+                                <action selector="onSaveClicked:" destination="Ssd-n1-47V" id="ZfY-Vp-65v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9E-7p-R0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2801.449275362319" y="-942.1875"/>
+            <point key="canvasLocation" x="3711.594202898551" y="-942.1875"/>
         </scene>
         <!--Journey-->
         <scene sceneID="rBN-zw-VWL">
@@ -283,6 +292,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="539-Cp-xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1902.8985507246377" y="519.64285714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iyh-m1-8IG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tPS-co-Zni" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UG1-b8-ulV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ssd-n1-47V" kind="relationship" relationship="rootViewController" id="m2e-f4-Iky"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lC5-Qe-kEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801.449275362319" y="-942.1875"/>
         </scene>
     </scenes>
 </document>
