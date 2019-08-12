@@ -269,10 +269,21 @@
                             <outlet property="delegate" destination="Lan-qo-Tuj" id="9U4-XE-Egp"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="vvg-aP-mhd" kind="show" identifier="toAdvisor" id="va8-IQ-m3n"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gk-99-fga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3630" y="520"/>
+        </scene>
+        <!--Advisor-->
+        <scene sceneID="vDs-Nq-jfn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Advisor" id="vvg-aP-mhd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9o-2M-Txk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4222" y="520"/>
         </scene>
         <!--Story-->
         <scene sceneID="TRV-6G-hfK">
