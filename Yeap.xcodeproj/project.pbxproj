@@ -16,6 +16,7 @@
 		390064FA22FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */; };
 		3900650122FC2CE8004189E6 /* Advisor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3900650022FC2CE8004189E6 /* Advisor.storyboard */; };
 		3900650322FC2E1B004189E6 /* AdvisorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900650222FC2E1B004189E6 /* AdvisorViewController.swift */; };
+		390AF28723029C0A002A87BA /* AdvisorCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390AF28623029C0A002A87BA /* AdvisorCardCollectionViewCell.swift */; };
 		3965891122F9879E008B7C63 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891022F9879E008B7C63 /* colors.swift */; };
 		3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891422FAA925008B7C63 /* JourneyViewController.swift */; };
 		3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */; };
@@ -64,6 +65,7 @@
 		390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReuseableLabelButtonTableViewCell.xib; sourceTree = "<group>"; };
 		3900650022FC2CE8004189E6 /* Advisor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Advisor.storyboard; sourceTree = "<group>"; };
 		3900650222FC2E1B004189E6 /* AdvisorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorViewController.swift; sourceTree = "<group>"; };
+		390AF28623029C0A002A87BA /* AdvisorCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3965891022F9879E008B7C63 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = SOURCE_ROOT; };
 		3965891422FAA925008B7C63 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */,
 				390064A922FBC28A004189E6 /* NameSettingTableViewCell.swift */,
 				390064AA22FBC28A004189E6 /* NameSettingTableViewCell.xib */,
+				390AF28623029C0A002A87BA /* AdvisorCardCollectionViewCell.swift */,
 				390064F322FBF3F7004189E6 /* PickerTableViewCell.swift */,
 				390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */,
 				390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */,
@@ -360,6 +363,7 @@
 				3965892022FAAEFA008B7C63 /* firstCellTableViewCell.swift in Sources */,
 				3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */,
 				BC04224222FAB12500D10B07 /* DailyTaskCollectionViewCell.swift in Sources */,
+				390AF28723029C0A002A87BA /* AdvisorCardCollectionViewCell.swift in Sources */,
 				BC02E18122FC06D5007FB216 /* Data.xcdatamodeld in Sources */,
 				3965891122F9879E008B7C63 /* colors.swift in Sources */,
 				BC04224422FAB3D200D10B07 /* Task.swift in Sources */,

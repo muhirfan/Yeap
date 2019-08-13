@@ -270,7 +270,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="vvg-aP-mhd" kind="show" identifier="toAdvisor" id="va8-IQ-m3n"/>
+                        <segue destination="vvg-aP-mhd" kind="presentation" identifier="toAdvisor" id="va8-IQ-m3n"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gk-99-fga" userLabel="First Responder" sceneMemberID="firstResponder"/>

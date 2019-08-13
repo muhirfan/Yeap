@@ -38,7 +38,10 @@ extension UIColor{
     }
     
     struct YeapTheme {
-        static var white = UIColor(hexString: "f4f6f6")
+        static var screenBackground = UIColor(hexString: "f6f6f6")
+        static var cardBackground = UIColor(hexString: "f9f9f9")
+        static var cardBorderColor = UIColor(hexString: "efefef")
+        static var shading = UIColor(hexString: "424141")
 
     }
 }
