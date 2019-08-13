@@ -91,6 +91,7 @@ class SettingTableViewController: UITableViewController {
         
     }
     @objc func goToAdvisorPage(){
+        performSegue(withIdentifier: "toAdvisor", sender: self)
         print("Change advisor needed!")
     }
     

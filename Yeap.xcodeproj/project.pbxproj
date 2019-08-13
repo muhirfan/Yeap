@@ -14,6 +14,8 @@
 		390064F622FBF3F7004189E6 /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */; };
 		390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */; };
 		390064FA22FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */; };
+		3900650122FC2CE8004189E6 /* Advisor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3900650022FC2CE8004189E6 /* Advisor.storyboard */; };
+		3900650322FC2E1B004189E6 /* AdvisorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900650222FC2E1B004189E6 /* AdvisorViewController.swift */; };
 		3965891122F9879E008B7C63 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891022F9879E008B7C63 /* colors.swift */; };
 		3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891422FAA925008B7C63 /* JourneyViewController.swift */; };
 		3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */; };
@@ -26,6 +28,7 @@
 		BC02E18122FC06D5007FB216 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC02E17F22FC06D5007FB216 /* Data.xcdatamodeld */; };
 		BC04224222FAB12500D10B07 /* DailyTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */; };
 		BC04224422FAB3D200D10B07 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04224322FAB3D200D10B07 /* Task.swift */; };
+		BC48C56622FD5BB00095E45D /* SubmitChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */; };
 		BC91132022F8F85600383393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91131F22F8F85600383393 /* AppDelegate.swift */; };
 		BC91132522F8F85600383393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC91132322F8F85600383393 /* Main.storyboard */; };
 		BC91132722F8F85800383393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC91132622F8F85800383393 /* Assets.xcassets */; };
@@ -59,6 +62,8 @@
 		390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
 		390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableLabelButtonTableViewCell.swift; sourceTree = "<group>"; };
 		390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReuseableLabelButtonTableViewCell.xib; sourceTree = "<group>"; };
+		3900650022FC2CE8004189E6 /* Advisor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Advisor.storyboard; sourceTree = "<group>"; };
+		3900650222FC2E1B004189E6 /* AdvisorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorViewController.swift; sourceTree = "<group>"; };
 		3965891022F9879E008B7C63 /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = SOURCE_ROOT; };
 		3965891422FAA925008B7C63 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		BC02E18022FC06D5007FB216 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyTaskCollectionViewCell.swift; path = Yeap/DailyTaskCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		BC04224322FAB3D200D10B07 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Yeap/Task.swift; sourceTree = SOURCE_ROOT; };
+		BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallengeViewController.swift; sourceTree = "<group>"; };
 		BC91131C22F8F85600383393 /* Yeap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC91131F22F8F85600383393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC91132422F8F85600383393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				BC91134D22F8F8F600383393 /* Models */,
 				BC91131F22F8F85600383393 /* AppDelegate.swift */,
 				BC91132322F8F85600383393 /* Main.storyboard */,
+				3900650022FC2CE8004189E6 /* Advisor.storyboard */,
 				BC91132622F8F85800383393 /* Assets.xcassets */,
 				BC91132822F8F85800383393 /* LaunchScreen.storyboard */,
 				BC91132B22F8F85800383393 /* Info.plist */,
@@ -195,10 +202,12 @@
 		BC91134F22F8F90800383393 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3900650222FC2E1B004189E6 /* AdvisorViewController.swift */,
 				3965891A22FAAE67008B7C63 /* StoryTableViewController.swift */,
 				3965891422FAA925008B7C63 /* JourneyViewController.swift */,
 				3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */,
 				3965892622FABA0B008B7C63 /* SettingTableViewController.swift */,
+				BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 			files = (
 				BC91132A22F8F85800383393 /* LaunchScreen.storyboard in Resources */,
 				BC91132722F8F85800383393 /* Assets.xcassets in Resources */,
+				3900650122FC2CE8004189E6 /* Advisor.storyboard in Resources */,
 				390064F622FBF3F7004189E6 /* PickerTableViewCell.xib in Resources */,
 				3965892122FAAEFA008B7C63 /* firstCellTableViewCell.xib in Resources */,
 				3965892522FAAF37008B7C63 /* StoryTableViewCell.xib in Resources */,
@@ -343,6 +353,7 @@
 				3965892722FABA0B008B7C63 /* SettingTableViewController.swift in Sources */,
 				390064F522FBF3F7004189E6 /* PickerTableViewCell.swift in Sources */,
 				390064AE22FBCD41004189E6 /* camera.swift in Sources */,
+				BC48C56622FD5BB00095E45D /* SubmitChallengeViewController.swift in Sources */,
 				3965891B22FAAE67008B7C63 /* StoryTableViewController.swift in Sources */,
 				390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */,
 				3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */,
@@ -353,6 +364,7 @@
 				3965891122F9879E008B7C63 /* colors.swift in Sources */,
 				BC04224422FAB3D200D10B07 /* Task.swift in Sources */,
 				BC91132022F8F85600383393 /* AppDelegate.swift in Sources */,
+				3900650322FC2E1B004189E6 /* AdvisorViewController.swift in Sources */,
 				3965892422FAAF37008B7C63 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
