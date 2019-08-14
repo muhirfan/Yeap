@@ -14,8 +14,8 @@ class StoryTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "firstCellTableViewCell", bundle: nil), forCellReuseIdentifier: "firstStoryCell")
         tableView.register(UINib(nibName: "StoryTableViewCell", bundle: nil), forCellReuseIdentifier: "storyCell")
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.tableView.allowsSelection = false
+    //    self.tableView = UITableView(frame: self.tableView.frame, style: .grouped)
         uiSetting()
 
     }
@@ -36,17 +36,26 @@ class StoryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "firstStoryCell", for: indexPath) as! firstCellTableViewCell
-        
+            cell.separatorInset = UIEdgeInsets(top: 0, left: cell.contentView.layer.bounds.size.width, bottom: 0, right: 0)
             cell.userName.text = "Qorry"
             cell.EmploymentStatus.text = "Employed"
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "storyCell", for: indexPath) as! StoryTableViewCell
             cell.titleStoryCellLabel.text = "Day 1"
+            
             return cell
         }
     }
- 
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if indexPath.row == 0{
+            return 150
+        }else{
+            return 180
+        }
+    }
     
     //MARK - Action to Setting Page
     ///  segue - Action to Setting Page
@@ -59,6 +68,7 @@ class StoryTableViewController: UITableViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.navigationController?.navigationBar.barTintColor = UIColor.black
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.hidesBarsOnSwipe = true
        // self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.largeTitleDisplayMode = .always
         self.navigationController?.navigationBar.shadowImage = UIImage()

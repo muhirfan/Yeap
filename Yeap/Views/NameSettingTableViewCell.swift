@@ -17,7 +17,7 @@ class NameSettingTableViewCell: UITableViewCell, UITextFieldDelegate {
     override func awakeFromNib() {
         super.awakeFromNib()
         nameTextField.borderStyle = .none
-        nameTextField.tintColor = .red
+        nameTextField.tintColor = UIColor(hexString:"FAB135")
         nameTextField.placeholder = "insert your name..."
         //nameTextField.
         

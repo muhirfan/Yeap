@@ -15,6 +15,9 @@ class ReuseableLabelButtonTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        reuseableButton.layer.borderColor = UIColor.orange.cgColor
+        reuseableButton.layer.cornerRadius = 10
+        reuseableButton.layer.borderWidth = 2.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

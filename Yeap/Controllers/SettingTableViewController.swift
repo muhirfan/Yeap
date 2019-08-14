@@ -11,12 +11,7 @@ import UIKit
 class SettingTableViewController: UITableViewController {
     var EmploymentStatus = ["Choose One","Unemployed","Employed"]
     var Education = ["Choose One","Vocational High School","High School"]
-    lazy var photoViewTappable : UIView = {
-        var photoView = UIView()
-        photoView.frame = CGRect(x: 10, y: 10, width: 30, height: 30)
-        photoView.backgroundColor = UIColor.red
-        return photoView
-    }()
+ 
     var imagePicker: ImagePicker!
     var image = UIImage()
     
@@ -24,13 +19,15 @@ class SettingTableViewController: UITableViewController {
         super.viewDidLoad()
         uiSetting()
         self.tableView = UITableView(frame: CGRect.zero, style: .grouped)
-
+        
         tableView.register(UINib(nibName: "firstCellTableViewCell", bundle: nil), forCellReuseIdentifier: "firstStoryCell")
         tableView.register(UINib(nibName: "NameSettingTableViewCell", bundle: nil), forCellReuseIdentifier: "nameSettingCell")
         tableView.register(UINib(nibName: "PickerTableViewCell", bundle: nil), forCellReuseIdentifier: "pickerCell")
         tableView.register(UINib(nibName: "ReuseableLabelButtonTableViewCell", bundle: nil), forCellReuseIdentifier: "labelButtonCell")
         self.imagePicker = ImagePicker(presentationController: self , delegate: self)
-        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.separatorStyle = .none
+        //tableView.estimatedRowHeight = 600
 
     }
 
@@ -55,9 +52,9 @@ class SettingTableViewController: UITableViewController {
             cell.lineView.isHidden = true
             cell.lineViewEmployment.isHidden = true
             cell.userImageView.image = image;
-            cell.contentView.addSubview(photoViewTappable)
+           
             let tap = UITapGestureRecognizer(target: self, action: #selector(proceedToGetPhoto))
-            photoViewTappable.addGestureRecognizer(tap)
+            cell.tappableView.addGestureRecognizer(tap)
             return cell
         }else if indexPath.row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "nameSettingCell", for: indexPath) as! NameSettingTableViewCell
@@ -82,8 +79,8 @@ class SettingTableViewController: UITableViewController {
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "labelButtonCell", for: indexPath) as! ReuseableLabelButtonTableViewCell
-            cell.reuseableLabel.text = " I Hate my Current Advisor "
-            cell.reuseableButton.setTitle("Change My Advisor!", for: .normal)
+            cell.reuseableLabel.text = " Choose your Advisor "
+            cell.reuseableButton.setTitle("I Hate my Current Advisor", for: .normal)
             cell.reuseableButton.addTarget(self, action: #selector(goToAdvisorPage), for: .touchUpInside)
             
             return cell
@@ -105,7 +102,8 @@ class SettingTableViewController: UITableViewController {
         self.navigationItem.largeTitleDisplayMode = .always
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
-        self.navigationItem.title = "Setting"
+        self.navigationItem.title = "Settings"
+        self.navigationController?.hidesBarsOnSwipe = true
       //  self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donePressed))
     }
     
@@ -118,11 +116,11 @@ class SettingTableViewController: UITableViewController {
         if indexPath.row == 0{
             return 150
         }else if indexPath.row == 1{
-            return 105
+            return 100
         }else if indexPath.row == 2{
-            return 150
+            return 120
         }else if indexPath.row == 3{
-            return 160
+            return 120
         }else{
             return 105
         }
@@ -136,7 +134,7 @@ class SettingTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let vw = UIView()
-        vw.backgroundColor = .red
+        vw.backgroundColor = .clear
         return vw
     }
 
@@ -179,6 +177,20 @@ extension SettingTableViewController : UIPickerViewDelegate, UIPickerViewDataSou
         }else{
             print(Education[row])
         }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        if pickerView.tag == 0{
+            let titleData = EmploymentStatus[row]
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.font:UIFont.TextStyle.caption1])
+            return myTitle
+            
+        }else{
+            let titleData = Education[row]
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.font:UIFont.TextStyle.caption1 ,NSAttributedString.Key.foregroundColor:UIColor.black])
+            return myTitle
+        }
+        
     }
     
 }

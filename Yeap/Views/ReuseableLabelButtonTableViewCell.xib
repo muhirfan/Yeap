@@ -20,22 +20,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihw-gy-yEh">
-                        <rect key="frame" x="34" y="15" width="290" height="20.5"/>
+                        <rect key="frame" x="24" y="15" width="310" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2a-Kh-Y8k">
-                        <rect key="frame" x="57" y="48" width="300" height="37"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2a-Kh-Y8k">
+                        <rect key="frame" x="32" y="43" width="350" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="1vp-6R-lNk"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="QqK-Vn-4pZ"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
                     </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ihw-gy-yEh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-27.75" id="Iq8-Gz-u5c"/>
                     <constraint firstItem="ihw-gy-yEh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-28" id="NgS-ev-Q1d"/>
-                    <constraint firstItem="ihw-gy-yEh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="34" id="Nt7-Xk-EIL"/>
+                    <constraint firstItem="ihw-gy-yEh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Nt7-Xk-EIL"/>
                     <constraint firstItem="F2a-Kh-Y8k" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="REF-Eq-Khm"/>
-                    <constraint firstItem="F2a-Kh-Y8k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="13.75" id="gRz-gl-92Q"/>
+                    <constraint firstItem="F2a-Kh-Y8k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="14.25" id="gRz-gl-92Q"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

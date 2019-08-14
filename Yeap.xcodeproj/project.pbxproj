@@ -175,10 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				3965891022F9879E008B7C63 /* colors.swift */,
-				3965891E22FAAEFA008B7C63 /* firstCellTableViewCell.swift */,
-				3965891F22FAAEFA008B7C63 /* firstCellTableViewCell.xib */,
-				3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */,
-				3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */,
 				BC04224322FAB3D200D10B07 /* Task.swift */,
 				390064AD22FBCD41004189E6 /* camera.swift */,
 			);
@@ -191,6 +187,10 @@
 				BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */,
 				390064A922FBC28A004189E6 /* NameSettingTableViewCell.swift */,
 				390064AA22FBC28A004189E6 /* NameSettingTableViewCell.xib */,
+				3965891E22FAAEFA008B7C63 /* firstCellTableViewCell.swift */,
+				3965891F22FAAEFA008B7C63 /* firstCellTableViewCell.xib */,
+				3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */,
+				3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */,
 				390064F322FBF3F7004189E6 /* PickerTableViewCell.swift */,
 				390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */,
 				390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */,
