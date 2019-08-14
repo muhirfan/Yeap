@@ -29,6 +29,7 @@
 		BC04224222FAB12500D10B07 /* DailyTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */; };
 		BC04224422FAB3D200D10B07 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04224322FAB3D200D10B07 /* Task.swift */; };
 		BC48C56622FD5BB00095E45D /* SubmitChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */; };
+		BC48C56A23038DAA0095E45D /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C56923038DAA0095E45D /* CoreDataHelper.swift */; };
 		BC91132022F8F85600383393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91131F22F8F85600383393 /* AppDelegate.swift */; };
 		BC91132522F8F85600383393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC91132322F8F85600383393 /* Main.storyboard */; };
 		BC91132722F8F85800383393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC91132622F8F85800383393 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyTaskCollectionViewCell.swift; path = Yeap/DailyTaskCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		BC04224322FAB3D200D10B07 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Yeap/Task.swift; sourceTree = SOURCE_ROOT; };
 		BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallengeViewController.swift; sourceTree = "<group>"; };
+		BC48C56923038DAA0095E45D /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		BC91131C22F8F85600383393 /* Yeap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC91131F22F8F85600383393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC91132422F8F85600383393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC48C56B2303900A0095E45D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BC48C56923038DAA0095E45D /* CoreDataHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BC48C56C2303B4DA0095E45D /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC02E17F22FC06D5007FB216 /* Data.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		BC91131322F8F85600383393 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +157,8 @@
 		BC91131E22F8F85600383393 /* Yeap */ = {
 			isa = PBXGroup;
 			children = (
+				BC48C56C2303B4DA0095E45D /* DataModel */,
+				BC48C56B2303900A0095E45D /* Helpers */,
 				BC91134F22F8F90800383393 /* Controllers */,
 				BC91134E22F8F90200383393 /* Views */,
 				BC91134D22F8F8F600383393 /* Models */,
@@ -148,7 +168,6 @@
 				BC91132622F8F85800383393 /* Assets.xcassets */,
 				BC91132822F8F85800383393 /* LaunchScreen.storyboard */,
 				BC91132B22F8F85800383393 /* Info.plist */,
-				BC02E17F22FC06D5007FB216 /* Data.xcdatamodeld */,
 			);
 			path = Yeap;
 			sourceTree = "<group>";
@@ -362,6 +381,7 @@
 				BC04224222FAB12500D10B07 /* DailyTaskCollectionViewCell.swift in Sources */,
 				BC02E18122FC06D5007FB216 /* Data.xcdatamodeld in Sources */,
 				3965891122F9879E008B7C63 /* colors.swift in Sources */,
+				BC48C56A23038DAA0095E45D /* CoreDataHelper.swift in Sources */,
 				BC04224422FAB3D200D10B07 /* Task.swift in Sources */,
 				BC91132022F8F85600383393 /* AppDelegate.swift in Sources */,
 				3900650322FC2E1B004189E6 /* AdvisorViewController.swift in Sources */,
