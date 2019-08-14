@@ -9,13 +9,13 @@
 import UIKit
 
 class StoryTableViewController: UITableViewController {
-   
+    var selectedRow :Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "firstCellTableViewCell", bundle: nil), forCellReuseIdentifier: "firstStoryCell")
         tableView.register(UINib(nibName: "StoryTableViewCell", bundle: nil), forCellReuseIdentifier: "storyCell")
-        self.tableView.allowsSelection = false
-    //    self.tableView = UITableView(frame: self.tableView.frame, style: .grouped)
+        self.tableView.allowsSelection = true
+        self.tableView.tableFooterView = UIView()
         uiSetting()
 
     }
@@ -39,11 +39,14 @@ class StoryTableViewController: UITableViewController {
             cell.separatorInset = UIEdgeInsets(top: 0, left: cell.contentView.layer.bounds.size.width, bottom: 0, right: 0)
             cell.userName.text = "Qorry"
             cell.EmploymentStatus.text = "Employed"
+            cell.selectionStyle = .none
+            cell.isUserInteractionEnabled = false
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "storyCell", for: indexPath) as! StoryTableViewCell
             cell.titleStoryCellLabel.text = "Day 1"
-            
+            cell.accessoryType = .disclosureIndicator
+            cell.selectionStyle = .gray
             return cell
         }
     }
@@ -55,6 +58,22 @@ class StoryTableViewController: UITableViewController {
         }else{
             return 180
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toIndividualStory" {
+            if let viewController = segue.destination as? StoryPageViewController{
+           // if let selectedRow = selectedRow {
+                viewController.selectedRow = selectedRow!
+                
+           // }
+        }
+    }
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedRow = indexPath.row
+        performSegue(withIdentifier: "toIndividualStory", sender: tableView)
+        
     }
     
     //MARK - Action to Setting Page
