@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreData
 
 class AdvisorViewController: UIViewController {
     
@@ -18,7 +18,10 @@ class AdvisorViewController: UIViewController {
         case sergeant = "Drill sergeant"
     }
     var advisorGetRaw : [String] = []
-
+    var backButton = UIBarButtonItem()
+    var selectedAdvisor : Int?
+    var selectedCell : [IndexPath]?
+    @IBOutlet weak var chooseAdvisorLabel: UILabel!
     @IBOutlet weak var advisorCardCollectionView: UICollectionView!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,20 +40,70 @@ class AdvisorViewController: UIViewController {
         self.advisorCardCollectionView.alwaysBounceVertical = false
         self.advisorCardCollectionView.backgroundColor = UIColor.YeapTheme.screenBackground
         advisorGetRaw = [AdvisorType.grandma.rawValue, AdvisorType.auntUncle.rawValue, AdvisorType.coach.rawValue, AdvisorType.sergeant.rawValue]
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "cancel", style: .plain, target: self, action: #selector(backButtonPressed))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "save", style: .done, target: self, action: #selector(saveToCoreData))
-        self.navigationItem.title = "Choose Your Advisor"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.largeTitleDisplayMode = .always
-//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 30, weight: .bold) ]
+        uiSetting()
+
     }
     
-    @objc func saveToCoreData(){
+    private func saveToCoreData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        // 1
+        let context = appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let entity = NSEntityDescription.entity(forEntityName: "Advisor", in: context)
+        let advisor = NSManagedObject(entity: entity!, insertInto: context)
+        
+        // 3
+        advisor.setValue(advisorGetRaw[selectedAdvisor!], forKey: "name")
+        print("advisor: \(advisorGetRaw[selectedAdvisor!])")
+        // 4
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    @objc func saveAdvisorToCoreData(){
+        if selectedAdvisor == nil{
+            let alert = UIAlertController(title: "Please select your advisor", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        } else{
+        saveToCoreData()
         print("save")
+        self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @objc func backButtonPressed(){
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func uiSetting(){
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(backButtonPressed))
+        self.navigationItem.leftBarButtonItem = cancelButton
+        cancelButton.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17)], for: .normal)
+        cancelButton.tintColor = UIColor(hexString: "072238")
+        let saveButton = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveAdvisorToCoreData))
+        self.navigationItem.rightBarButtonItem = saveButton
+        saveButton.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17)], for: .normal)
+        saveButton.tintColor = UIColor(hexString: "072238")
+        self.navigationItem.title = ""
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        chooseAdvisorLabel.numberOfLines = 0
+        chooseAdvisorLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        chooseAdvisorLabel.font = UIFont.systemFont(ofSize: 28, weight: .bold)
+        chooseAdvisorLabel.text = "Choose your advisor!"
+        chooseAdvisorLabel.textColor = UIColor(hexString: "072238")
+        chooseAdvisorLabel.sizeToFit()
     }
     
 }
@@ -64,28 +117,18 @@ extension AdvisorViewController : UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "advisorCardCell", for: indexPath) as! AdvisorCardCollectionViewCell
         
         cell.advisorImageView.image = UIImage(named: advisorGetRaw[indexPath.row])
-        //cell.shadowImage.layer.borderColor = UIColor.darkGray.cgColor
         cell.advisorLabel.text = "\(advisorGetRaw[indexPath.row])"
         cell.contentView.backgroundColor = UIColor.YeapTheme.screenBackground
-        
-       // cell.shadowImage.addShadow(offset: CGSize.init(width: 0, height: 10), color: UIColor.black, radius: 2.0, opacity: 0.55)
-       
         return cell
     }
     
-//     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: CGFloat((collectionView.frame.size.width ) - 20), height: CGFloat(100))
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedAdvisor = indexPath.row
+        print("\(indexPath.row)")
+    }
+    
+
+    
 }
 
-//extension AdvisorViewController : UICollectionViewDelegateFlowLayout {
-//    
-//    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//        let itemsPerRow:CGFloat = 10
-//        let hardCodedPadding:CGFloat = 40
-//        let itemWidth = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding
-//        let itemHeight = collectionView.bounds.height - (3 * hardCodedPadding)
-//        return CGSize(width: itemWidth, height: itemHeight)
-//    }
-//}
 
