@@ -31,8 +31,9 @@ class SettingTableViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        if image != nil {
         loadFromData()
-        
+        }
     }
     
     override func viewDidLoad() {
