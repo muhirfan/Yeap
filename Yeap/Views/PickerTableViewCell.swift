@@ -14,8 +14,8 @@ class PickerTableViewCell: UITableViewCell {
     @IBOutlet weak var pickerLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
+        pickerLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        pickerLabel.textColor = UIColor(hexString: "072238")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

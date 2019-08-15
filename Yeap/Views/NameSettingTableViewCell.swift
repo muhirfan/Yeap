@@ -13,14 +13,18 @@ class NameSettingTableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var viewSettingCellBackground: UIView!
+    var saved :String?
+    
+    var returnValue: ((_ value: String)->())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         nameTextField.borderStyle = .none
         nameTextField.tintColor = UIColor(hexString:"FAB135")
+        nameTextField.delegate = self
         nameTextField.placeholder = "insert your name..."
-        //nameTextField.
-        
+        nameLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        nameLabel.textColor = UIColor(hexString: "072238")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -34,5 +38,7 @@ class NameSettingTableViewCell: UITableViewCell, UITextFieldDelegate {
         self.viewSettingCellBackground.endEditing(true)
         print(touches)
     }
+
+
 
 }
