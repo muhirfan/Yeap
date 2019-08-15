@@ -25,6 +25,8 @@ class DailyTaskViewController: UIViewController, UICollectionViewDataSource, UIC
         taskCollectionView.dataSource = self
         taskCollectionView.delegate = self
         
+//        taskCollectionView.register(UINib.init(nibName: "MemeCell", bundle: nil), forCellWithReuseIdentifier: "MemeCell")
+        
 //        saveToCoreData()
         loadFromData()
     }

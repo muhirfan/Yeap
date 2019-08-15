@@ -30,6 +30,8 @@
 		BC04224422FAB3D200D10B07 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04224322FAB3D200D10B07 /* Task.swift */; };
 		BC48C56622FD5BB00095E45D /* SubmitChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */; };
 		BC48C56A23038DAA0095E45D /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C56923038DAA0095E45D /* CoreDataHelper.swift */; };
+		BC48C5712303E7F50095E45D /* ChallengeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C56F2303E7F50095E45D /* ChallengeCollectionViewCell.swift */; };
+		BC48C5722303E7F50095E45D /* ChallengeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC48C5702303E7F50095E45D /* ChallengeCollectionViewCell.xib */; };
 		BC91132022F8F85600383393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91131F22F8F85600383393 /* AppDelegate.swift */; };
 		BC91132522F8F85600383393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC91132322F8F85600383393 /* Main.storyboard */; };
 		BC91132722F8F85800383393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC91132622F8F85800383393 /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		BC04224322FAB3D200D10B07 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Yeap/Task.swift; sourceTree = SOURCE_ROOT; };
 		BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallengeViewController.swift; sourceTree = "<group>"; };
 		BC48C56923038DAA0095E45D /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		BC48C56F2303E7F50095E45D /* ChallengeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC48C5702303E7F50095E45D /* ChallengeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeCollectionViewCell.xib; sourceTree = "<group>"; };
 		BC91131C22F8F85600383393 /* Yeap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC91131F22F8F85600383393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC91132422F8F85600383393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				390064F422FBF3F7004189E6 /* PickerTableViewCell.xib */,
 				390064F722FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift */,
 				390064F822FC081C004189E6 /* ReuseableLabelButtonTableViewCell.xib */,
+				BC48C56F2303E7F50095E45D /* ChallengeCollectionViewCell.swift */,
+				BC48C5702303E7F50095E45D /* ChallengeCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC48C5722303E7F50095E45D /* ChallengeCollectionViewCell.xib in Resources */,
 				BC91132A22F8F85800383393 /* LaunchScreen.storyboard in Resources */,
 				BC91132722F8F85800383393 /* Assets.xcassets in Resources */,
 				3900650122FC2CE8004189E6 /* Advisor.storyboard in Resources */,
@@ -372,6 +379,7 @@
 				3965892722FABA0B008B7C63 /* SettingTableViewController.swift in Sources */,
 				390064F522FBF3F7004189E6 /* PickerTableViewCell.swift in Sources */,
 				390064AE22FBCD41004189E6 /* camera.swift in Sources */,
+				BC48C5712303E7F50095E45D /* ChallengeCollectionViewCell.swift in Sources */,
 				BC48C56622FD5BB00095E45D /* SubmitChallengeViewController.swift in Sources */,
 				3965891B22FAAE67008B7C63 /* StoryTableViewController.swift in Sources */,
 				390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */,
