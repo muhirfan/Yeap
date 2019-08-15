@@ -29,7 +29,7 @@ class firstCellTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        userImageView.layer.cornerRadius = 56
+        userImageView.layer.cornerRadius = 60
         userImageView.backgroundColor = UIColor(hexString:"FAB135")
         userImageView.layer.borderColor = UIColor(hexString:"FAB135").cgColor
         userImageView.layer.borderWidth = 2

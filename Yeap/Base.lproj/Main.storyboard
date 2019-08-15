@@ -268,7 +268,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BC6-t8-J5S">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-NT-v0u">
                                                 <rect key="frame" x="23" y="506" width="374" height="26"/>
@@ -294,9 +294,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtC-pc-vlC">
-                                                <rect key="frame" x="23" y="603" width="368" height="301"/>
+                                                <rect key="frame" x="23" y="603" width="368" height="249"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="301" id="8yh-bx-FYm"/>
+                                                    <constraint firstAttribute="height" constant="249" id="8yh-bx-FYm"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -314,23 +314,24 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="LtC-pc-vlC" firstAttribute="top" secondItem="cpp-iY-I72" secondAttribute="bottom" constant="8" id="3QI-7h-dQS"/>
                                             <constraint firstItem="cpp-iY-I72" firstAttribute="top" secondItem="cOo-b5-QTc" secondAttribute="bottom" constant="18" id="4Cg-Bf-gxV"/>
                                             <constraint firstAttribute="trailing" secondItem="XhB-mo-WYK" secondAttribute="trailing" constant="23" id="4ww-ed-FMq"/>
                                             <constraint firstItem="XhB-mo-WYK" firstAttribute="top" secondItem="BC6-t8-J5S" secondAttribute="top" multiplier="1.2" constant="25" id="8Ie-wN-42j"/>
                                             <constraint firstItem="cpp-iY-I72" firstAttribute="centerX" secondItem="XhB-mo-WYK" secondAttribute="centerX" id="AAc-WX-W8w"/>
                                             <constraint firstItem="Uem-NT-v0u" firstAttribute="top" secondItem="XhB-mo-WYK" secondAttribute="bottom" constant="31" id="CcY-0H-FUx"/>
-                                            <constraint firstItem="XhB-mo-WYK" firstAttribute="centerY" secondItem="BC6-t8-J5S" secondAttribute="centerY" multiplier="0.5" id="EfR-TJ-eRs"/>
+                                            <constraint firstItem="XhB-mo-WYK" firstAttribute="centerY" secondItem="BC6-t8-J5S" secondAttribute="centerY" multiplier="0.5" constant="25" id="EfR-TJ-eRs"/>
                                             <constraint firstItem="cpp-iY-I72" firstAttribute="leading" secondItem="BC6-t8-J5S" secondAttribute="leading" constant="23" id="Mct-z2-MBx"/>
-                                            <constraint firstItem="cOo-b5-QTc" firstAttribute="centerY" secondItem="BC6-t8-J5S" secondAttribute="centerY" constant="39.5" id="Q9m-qm-Jv2"/>
+                                            <constraint firstItem="cOo-b5-QTc" firstAttribute="centerY" secondItem="BC6-t8-J5S" secondAttribute="centerY" constant="89.5" id="Q9m-qm-Jv2"/>
                                             <constraint firstItem="cOo-b5-QTc" firstAttribute="width" secondItem="XhB-mo-WYK" secondAttribute="width" constant="6" id="SOB-nP-Ura"/>
                                             <constraint firstItem="XhB-mo-WYK" firstAttribute="centerX" secondItem="BC6-t8-J5S" secondAttribute="centerX" id="Upb-i9-beX"/>
                                             <constraint firstItem="LtC-pc-vlC" firstAttribute="centerX" secondItem="BC6-t8-J5S" secondAttribute="centerX" id="V4H-rL-34n"/>
                                             <constraint firstItem="cOo-b5-QTc" firstAttribute="centerX" secondItem="BC6-t8-J5S" secondAttribute="centerX" constant="3" id="V7O-Kt-nvq"/>
-                                            <constraint firstAttribute="bottom" secondItem="LtC-pc-vlC" secondAttribute="bottom" constant="96" id="awr-xd-CIG"/>
+                                            <constraint firstAttribute="bottom" secondItem="LtC-pc-vlC" secondAttribute="bottom" constant="48" id="awr-xd-CIG"/>
                                             <constraint firstItem="LtC-pc-vlC" firstAttribute="leading" secondItem="BC6-t8-J5S" secondAttribute="leading" constant="23" id="b1P-Ih-8HH"/>
                                             <constraint firstItem="LtC-pc-vlC" firstAttribute="top" secondItem="cpp-iY-I72" secondAttribute="bottom" constant="8" id="beO-t9-fwa"/>
                                             <constraint firstItem="cOo-b5-QTc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XhB-mo-WYK" secondAttribute="leading" id="boH-iU-nF9"/>
-                                            <constraint firstAttribute="height" constant="1000" id="f17-5X-8qT"/>
+                                            <constraint firstAttribute="height" constant="900" id="f17-5X-8qT"/>
                                             <constraint firstItem="Uem-NT-v0u" firstAttribute="trailing" secondItem="XhB-mo-WYK" secondAttribute="trailing" constant="6" id="fnP-bY-6wn"/>
                                             <constraint firstItem="XhB-mo-WYK" firstAttribute="leading" secondItem="BC6-t8-J5S" secondAttribute="leading" constant="23" id="h9g-S5-Y48"/>
                                             <constraint firstItem="cOo-b5-QTc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XhB-mo-WYK" secondAttribute="trailing" id="tsG-Jn-mlm"/>
@@ -339,7 +340,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="BC6-t8-J5S" secondAttribute="bottom" constant="-275" id="ER0-mq-DgQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="BC6-t8-J5S" secondAttribute="bottom" constant="-175" id="ER0-mq-DgQ"/>
                                     <constraint firstAttribute="trailing" secondItem="BC6-t8-J5S" secondAttribute="trailing" id="Q8Q-Jp-Kdx"/>
                                     <constraint firstItem="BC6-t8-J5S" firstAttribute="width" secondItem="WMc-4e-aUx" secondAttribute="width" id="U0C-oz-peH"/>
                                     <constraint firstItem="BC6-t8-J5S" firstAttribute="top" secondItem="WMc-4e-aUx" secondAttribute="top" id="dFj-6J-MCu"/>

@@ -26,7 +26,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2a-Kh-Y8k">
-                        <rect key="frame" x="32" y="43" width="350" height="48"/>
+                        <rect key="frame" x="32" y="50" width="350" height="48"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="1vp-6R-lNk"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="QqK-Vn-4pZ"/>
@@ -39,7 +39,7 @@
                     <constraint firstItem="ihw-gy-yEh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-28" id="NgS-ev-Q1d"/>
                     <constraint firstItem="ihw-gy-yEh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Nt7-Xk-EIL"/>
                     <constraint firstItem="F2a-Kh-Y8k" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="REF-Eq-Khm"/>
-                    <constraint firstItem="F2a-Kh-Y8k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="14.25" id="gRz-gl-92Q"/>
+                    <constraint firstItem="F2a-Kh-Y8k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="21.25" id="gRz-gl-92Q"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
