@@ -17,9 +17,7 @@ class SettingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        uiSetting()
-        self.tableView = UITableView(frame: CGRect.zero, style: .grouped)
-        
+        uiSetting()        
         tableView.register(UINib(nibName: "firstCellTableViewCell", bundle: nil), forCellReuseIdentifier: "firstStoryCell")
         tableView.register(UINib(nibName: "NameSettingTableViewCell", bundle: nil), forCellReuseIdentifier: "nameSettingCell")
         tableView.register(UINib(nibName: "PickerTableViewCell", bundle: nil), forCellReuseIdentifier: "pickerCell")
@@ -27,6 +25,7 @@ class SettingTableViewController: UITableViewController {
         self.imagePicker = ImagePicker(presentationController: self , delegate: self)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
+        self.tableView.tableFooterView = UIView()
         //tableView.estimatedRowHeight = 600
 
     }
@@ -104,7 +103,7 @@ class SettingTableViewController: UITableViewController {
         self.navigationController?.view.backgroundColor = .clear
         self.navigationItem.title = "Settings"
         self.navigationController?.hidesBarsOnSwipe = true
-      //  self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donePressed))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(donePressed))
     }
     
     @objc func donePressed(){
