@@ -32,10 +32,10 @@ class StoryPageViewController: UIViewController {
         reflectionLabel.adjustsFontSizeToFitWidth = true
         dateLabel.sizeToFit()
 
-        print("row \(selectedRow)")
+        print("row \(String(describing: selectedRow))")
         
         if let day = selectedRow{
-            self.navigationItem.title = "Day \(String(describing: selectedRow!))"
+            self.navigationItem.title = "Day \(String(describing: day))"
         }
     }
     

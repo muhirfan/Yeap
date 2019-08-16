@@ -7,9 +7,23 @@
 //
 
 import UIKit
+import CoreData
 
 class StoryTableViewController: UITableViewController {
+    struct StoryAll {
+        var date: Date
+        var task: String
+        var reflection: String
+    }
+    
     var selectedRow :Int?
+    
+    var stories : [StoryAll]?
+    var reflection: String?
+    var date: Date?
+    var task: String?
+    var totalStories: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "firstCellTableViewCell", bundle: nil), forCellReuseIdentifier: "firstStoryCell")
@@ -17,18 +31,33 @@ class StoryTableViewController: UITableViewController {
         self.tableView.allowsSelection = true
         self.tableView.tableFooterView = UIView()
         uiSetting()
+        loadFromData()
 
     }
 
+    private func loadFromData(){
+        let result = CoreDataHelper.fetchCoreData(entityName: "Story")
+        print("tes story \(result)")
+        for data in result as! [NSManagedObject] {
+            totalStories = result.count
+            if totalStories != 0 {
+            task = (data.value(forKey: "task") as! String)
+            reflection = (data.value(forKey: "reflection") as? String) ?? ""
+            date = (data.value(forKey: "date") as? Date)!
+                var story = StoryAll(date: date!, task: task!, reflection: reflection!)
+            stories?.append(story)
+            }
+        }
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 2
     }
 
@@ -96,7 +125,7 @@ class StoryTableViewController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: .bold) ]
         self.navigationItem.title = "Story"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Setting"), style: .plain, target: self, action: #selector(segueToSettingPage))
-            //UIBarButtonItem(title: "Setting", style: .plain, target: self, action: #selector(segueToSettingPage))
+        
     }
 
 

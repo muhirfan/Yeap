@@ -26,6 +26,7 @@
 		3965892422FAAF37008B7C63 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */; };
 		3965892522FAAF37008B7C63 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */; };
 		3965892722FABA0B008B7C63 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965892622FABA0B008B7C63 /* SettingTableViewController.swift */; };
+		39A640C7230685F1009E4472 /* DailyChallengeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A640C6230685F1009E4472 /* DailyChallengeData.swift */; };
 		BC02E18122FC06D5007FB216 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC02E17F22FC06D5007FB216 /* Data.xcdatamodeld */; };
 		BC04224222FAB12500D10B07 /* DailyTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */; };
 		BC04224422FAB3D200D10B07 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04224322FAB3D200D10B07 /* Task.swift */; };
@@ -79,6 +80,7 @@
 		3965892222FAAF37008B7C63 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryTableViewCell.swift; path = Yeap/Views/StoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		3965892322FAAF37008B7C63 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StoryTableViewCell.xib; path = Yeap/Views/StoryTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		3965892622FABA0B008B7C63 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		39A640C6230685F1009E4472 /* DailyChallengeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyChallengeData.swift; path = Yeap/DailyChallengeData.swift; sourceTree = SOURCE_ROOT; };
 		BC02E18022FC06D5007FB216 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		BC04224122FAB12500D10B07 /* DailyTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyTaskCollectionViewCell.swift; path = Yeap/DailyTaskCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		BC04224322FAB3D200D10B07 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Yeap/Task.swift; sourceTree = SOURCE_ROOT; };
@@ -205,6 +207,7 @@
 				3965891022F9879E008B7C63 /* colors.swift */,
 				BC04224322FAB3D200D10B07 /* Task.swift */,
 				390064AD22FBCD41004189E6 /* camera.swift */,
+				39A640C6230685F1009E4472 /* DailyChallengeData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				BC91132022F8F85600383393 /* AppDelegate.swift in Sources */,
 				3900650322FC2E1B004189E6 /* AdvisorViewController.swift in Sources */,
 				3965892422FAAF37008B7C63 /* StoryTableViewCell.swift in Sources */,
+				39A640C7230685F1009E4472 /* DailyChallengeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
