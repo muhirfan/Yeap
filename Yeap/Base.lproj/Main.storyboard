@@ -339,21 +339,50 @@
             </objects>
             <point key="canvasLocation" x="5490" y="-948"/>
         </scene>
-        <!--Journey-->
+        <!--Your Journey!-->
         <scene sceneID="rBN-zw-VWL">
             <objects>
                 <viewController id="fgk-dy-RHH" customClass="JourneyViewController" customModule="Yeap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xcV-qj-oLJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="journey1" translatesAutoresizingMaskIntoConstraints="NO" id="erT-gF-4pD">
+                                <rect key="frame" x="40" y="196.5" width="334" height="508"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhA-i5-cl0">
+                                <rect key="frame" x="40" y="112" width="35" height="36"/>
+                                <string key="text">Be 
+super humble!</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Humble" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SU-Tc-gd6">
+                                <rect key="frame" x="40" y="156" width="185" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3uY-YW-DvF" firstAttribute="trailing" secondItem="erT-gF-4pD" secondAttribute="trailing" constant="40" id="Ayc-J6-QKM"/>
+                            <constraint firstItem="erT-gF-4pD" firstAttribute="centerY" secondItem="3uY-YW-DvF" secondAttribute="centerY" id="Cim-kq-LNt"/>
+                            <constraint firstItem="erT-gF-4pD" firstAttribute="leading" secondItem="3uY-YW-DvF" secondAttribute="leading" constant="40" id="Ct0-S8-tr5"/>
+                            <constraint firstItem="YhA-i5-cl0" firstAttribute="leading" secondItem="erT-gF-4pD" secondAttribute="leading" id="I2A-AA-nnT"/>
+                            <constraint firstItem="5SU-Tc-gd6" firstAttribute="leading" secondItem="YhA-i5-cl0" secondAttribute="leading" id="ZQr-QV-50P"/>
+                            <constraint firstItem="erT-gF-4pD" firstAttribute="centerX" secondItem="3uY-YW-DvF" secondAttribute="centerX" id="fr1-Fm-whU"/>
+                            <constraint firstItem="5SU-Tc-gd6" firstAttribute="top" secondItem="YhA-i5-cl0" secondAttribute="bottom" constant="8" id="gXZ-Iz-iMF"/>
+                            <constraint firstItem="YhA-i5-cl0" firstAttribute="top" secondItem="3uY-YW-DvF" secondAttribute="top" constant="24" id="jFf-aQ-5nn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3uY-YW-DvF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Journey" id="LT3-sX-ytu"/>
+                    <navigationItem key="navigationItem" title="Your Journey!" id="ZDX-FY-6wI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVd-N4-YL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="-194"/>
+            <point key="canvasLocation" x="2813.04347826087" y="-194.19642857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="e5e-Wt-Vgu">
@@ -366,7 +395,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="YTn-NX-VN3" kind="relationship" relationship="viewControllers" id="lgE-At-pls"/>
-                        <segue destination="fgk-dy-RHH" kind="relationship" relationship="viewControllers" id="E1J-ho-msR"/>
+                        <segue destination="Lxq-UA-J7O" kind="relationship" relationship="viewControllers" id="E1J-ho-msR"/>
                         <segue destination="KDP-zb-URM" kind="relationship" relationship="viewControllers" id="EFG-CU-ioo"/>
                     </connections>
                 </tabBarController>
@@ -682,11 +711,31 @@
             </objects>
             <point key="canvasLocation" x="6227" y="-942"/>
         </scene>
+        <!--Journey-->
+        <scene sceneID="C4r-Ox-4DX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lxq-UA-J7O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Journey" id="LT3-sX-ytu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NwL-wp-7eC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fgk-dy-RHH" kind="relationship" relationship="rootViewController" id="dXt-C2-zHX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nl-7V-1Mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902.8985507246377" y="-194.19642857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Grandma-mini" width="500" height="555"/>
         <image name="camera" width="500" height="409"/>
         <image name="challenge1" width="500" height="453"/>
+        <image name="journey1" width="500" height="508"/>
         <namedColor name="CardBackground">
             <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
