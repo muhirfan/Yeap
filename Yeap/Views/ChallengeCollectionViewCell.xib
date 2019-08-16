@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChallengeCell" id="gTV-IL-0wX" customClass="ChallengeCollectionViewCell" customModule="Yeap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="486"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="486"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDc-Fw-agl">
+                        <rect key="frame" x="0.0" y="0.0" width="364.5" height="486"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="18Y-6v-AoY">
+                                <rect key="frame" x="61" y="16" width="243" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="18Y-6v-AoY" secondAttribute="height" multiplier="1:1" id="utH-mt-7Jw"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h18-Us-sfo">
+                                <rect key="frame" x="8" y="275" width="348.5" height="243"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgZ-XI-vJB">
+                                        <rect key="frame" x="156" y="8" width="36.5" height="21"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Go visit someone who need comfort, and hug them" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1O-Qk-GmV">
+                                        <rect key="frame" x="16" y="45" width="316.5" height="56"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Y1O-Qk-GmV" firstAttribute="top" secondItem="bgZ-XI-vJB" secondAttribute="bottom" constant="16" id="0A5-xe-qNs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y1O-Qk-GmV" secondAttribute="trailing" constant="16" id="Dab-ur-hbt"/>
+                                    <constraint firstItem="bgZ-XI-vJB" firstAttribute="top" secondItem="h18-Us-sfo" secondAttribute="top" constant="8" id="KnC-UN-h2g"/>
+                                    <constraint firstItem="Y1O-Qk-GmV" firstAttribute="leading" secondItem="h18-Us-sfo" secondAttribute="leading" constant="16" id="LUp-RE-4S0"/>
+                                    <constraint firstItem="bgZ-XI-vJB" firstAttribute="centerX" secondItem="h18-Us-sfo" secondAttribute="centerX" id="zqx-sB-n0h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="h18-Us-sfo" firstAttribute="height" secondItem="jDc-Fw-agl" secondAttribute="height" multiplier="0.5" id="7yx-Iq-tnA"/>
+                            <constraint firstItem="18Y-6v-AoY" firstAttribute="top" secondItem="jDc-Fw-agl" secondAttribute="top" constant="16" id="9GM-xj-UDh"/>
+                            <constraint firstItem="18Y-6v-AoY" firstAttribute="centerX" secondItem="jDc-Fw-agl" secondAttribute="centerX" id="C0d-6L-9hp"/>
+                            <constraint firstItem="18Y-6v-AoY" firstAttribute="height" secondItem="jDc-Fw-agl" secondAttribute="height" multiplier="0.5" id="Ec9-6M-FD8"/>
+                            <constraint firstAttribute="bottom" secondItem="h18-Us-sfo" secondAttribute="bottom" priority="750" constant="8" id="Iwe-D0-EzF"/>
+                            <constraint firstItem="h18-Us-sfo" firstAttribute="leading" secondItem="jDc-Fw-agl" secondAttribute="leading" constant="8" id="aOU-ZR-0RQ"/>
+                            <constraint firstAttribute="trailing" secondItem="18Y-6v-AoY" secondAttribute="trailing" priority="500" constant="16" id="adh-Ey-FVd"/>
+                            <constraint firstAttribute="width" secondItem="jDc-Fw-agl" secondAttribute="height" multiplier="3:4" id="mel-9F-jn2"/>
+                            <constraint firstItem="h18-Us-sfo" firstAttribute="top" secondItem="18Y-6v-AoY" secondAttribute="bottom" constant="16" id="tep-AX-Ujx"/>
+                            <constraint firstAttribute="trailing" secondItem="h18-Us-sfo" secondAttribute="trailing" constant="8" id="vQu-gR-BOX"/>
+                            <constraint firstItem="18Y-6v-AoY" firstAttribute="leading" secondItem="jDc-Fw-agl" secondAttribute="leading" priority="750" constant="16" id="wVz-Bm-ghN"/>
+                            <constraint firstAttribute="trailing" secondItem="18Y-6v-AoY" secondAttribute="trailing" priority="500" constant="16" id="zJm-Yg-ZAc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jDc-Fw-agl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GFn-T5-Jy8"/>
+                <constraint firstItem="jDc-Fw-agl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="V1W-hk-yY4"/>
+                <constraint firstAttribute="bottom" secondItem="jDc-Fw-agl" secondAttribute="bottom" id="wCO-rQ-TAm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="406" height="486"/>
+            <connections>
+                <outlet property="descriptionTextView" destination="Y1O-Qk-GmV" id="bCb-x4-W3Y"/>
+                <outlet property="imageView" destination="18Y-6v-AoY" id="DJe-Cp-hw8"/>
+                <outlet property="titleLabel" destination="bgZ-XI-vJB" id="THc-U6-xrY"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="154.6875"/>
+        </collectionViewCell>
+    </objects>
+</document>
