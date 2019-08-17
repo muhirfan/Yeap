@@ -11,5 +11,6 @@ import UIKit
 class DailyTaskCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var taskImageView: UIImageView!
     @IBOutlet weak var taskLabel: UILabel!
+    @IBOutlet weak var taskDescriptionLabel: UITextView!
     
 }
