@@ -22,7 +22,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HI9-ZC-Wra">
                                 <rect key="frame" x="24" y="112" width="366" height="138"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grandma-mini" translatesAutoresizingMaskIntoConstraints="NO" id="tes-9b-ZEM">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aunt-uncle-mini" translatesAutoresizingMaskIntoConstraints="NO" id="tes-9b-ZEM">
                                         <rect key="frame" x="8" y="8" width="91.5" height="122"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tes-9b-ZEM" secondAttribute="height" multiplier="3:4" id="EL8-if-dp7"/>
@@ -90,52 +90,64 @@
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="challenge1" translatesAutoresizingMaskIntoConstraints="NO" id="nFY-az-OcW">
-                                                    <rect key="frame" x="56" y="24" width="128" height="128"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="nFY-az-OcW" secondAttribute="height" multiplier="1:1" id="X37-Lr-GoZ"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-0a-1MK">
-                                                    <rect key="frame" x="16" y="184" width="208" height="112"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVp-7u-dlL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kind" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8U-b4-rYL">
-                                                            <rect key="frame" x="87" y="0.0" width="34.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Go visit someone who need comfort, and hug them." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fKs-b6-u2Z">
-                                                            <rect key="frame" x="0.0" y="28.5" width="208" height="83.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        </textView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-0a-1MK">
+                                                            <rect key="frame" x="16" y="160" width="208" height="144"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kind" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8U-b4-rYL">
+                                                                    <rect key="frame" x="87" y="0.0" width="34.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Go visit someone who need comfort, and hug them." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fKs-b6-u2Z">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="208" height="115.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="fKs-b6-u2Z" firstAttribute="leading" secondItem="ewd-0a-1MK" secondAttribute="leading" id="Bg4-Xk-iAZ"/>
+                                                                <constraint firstItem="fKs-b6-u2Z" firstAttribute="top" secondItem="Y8U-b4-rYL" secondAttribute="bottom" constant="8" id="Jzd-ln-Iym"/>
+                                                                <constraint firstItem="Y8U-b4-rYL" firstAttribute="leading" secondItem="ewd-0a-1MK" secondAttribute="leading" priority="250" constant="16" id="O59-aj-pA2"/>
+                                                                <constraint firstItem="Y8U-b4-rYL" firstAttribute="centerX" secondItem="ewd-0a-1MK" secondAttribute="centerX" id="Smq-mH-pGk"/>
+                                                                <constraint firstAttribute="trailing" secondItem="fKs-b6-u2Z" secondAttribute="trailing" id="bB6-Ja-Pff"/>
+                                                                <constraint firstAttribute="bottom" secondItem="fKs-b6-u2Z" secondAttribute="bottom" id="bIv-Kx-Rlv"/>
+                                                                <constraint firstItem="Y8U-b4-rYL" firstAttribute="top" secondItem="ewd-0a-1MK" secondAttribute="top" id="cGi-8h-4hN"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Y8U-b4-rYL" secondAttribute="trailing" priority="250" constant="16" id="j3a-fO-z9f"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="challenge1" translatesAutoresizingMaskIntoConstraints="NO" id="nFY-az-OcW">
+                                                            <rect key="frame" x="56" y="16" width="128" height="128"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="nFY-az-OcW" secondAttribute="height" multiplier="1:1" id="X37-Lr-GoZ"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
+                                                    <color key="backgroundColor" name="CardBackground"/>
                                                     <constraints>
-                                                        <constraint firstItem="fKs-b6-u2Z" firstAttribute="leading" secondItem="ewd-0a-1MK" secondAttribute="leading" id="Bg4-Xk-iAZ"/>
-                                                        <constraint firstItem="fKs-b6-u2Z" firstAttribute="top" secondItem="Y8U-b4-rYL" secondAttribute="bottom" constant="8" id="Jzd-ln-Iym"/>
-                                                        <constraint firstItem="Y8U-b4-rYL" firstAttribute="leading" secondItem="ewd-0a-1MK" secondAttribute="leading" priority="250" constant="16" id="O59-aj-pA2"/>
-                                                        <constraint firstItem="Y8U-b4-rYL" firstAttribute="centerX" secondItem="ewd-0a-1MK" secondAttribute="centerX" id="Smq-mH-pGk"/>
-                                                        <constraint firstAttribute="trailing" secondItem="fKs-b6-u2Z" secondAttribute="trailing" id="bB6-Ja-Pff"/>
-                                                        <constraint firstAttribute="bottom" secondItem="fKs-b6-u2Z" secondAttribute="bottom" id="bIv-Kx-Rlv"/>
-                                                        <constraint firstItem="Y8U-b4-rYL" firstAttribute="top" secondItem="ewd-0a-1MK" secondAttribute="top" id="cGi-8h-4hN"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Y8U-b4-rYL" secondAttribute="trailing" priority="250" constant="16" id="j3a-fO-z9f"/>
+                                                        <constraint firstItem="nFY-az-OcW" firstAttribute="height" secondItem="SVp-7u-dlL" secondAttribute="height" multiplier="0.4" id="Bwj-B8-l22"/>
+                                                        <constraint firstItem="ewd-0a-1MK" firstAttribute="leading" secondItem="SVp-7u-dlL" secondAttribute="leading" constant="16" id="GnW-hp-FPR"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ewd-0a-1MK" secondAttribute="trailing" constant="16" id="R0k-Cr-bQj"/>
+                                                        <constraint firstItem="ewd-0a-1MK" firstAttribute="top" secondItem="nFY-az-OcW" secondAttribute="bottom" constant="16" id="RXB-sP-xhj"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ewd-0a-1MK" secondAttribute="bottom" constant="16" id="agM-1P-ggR"/>
+                                                        <constraint firstItem="nFY-az-OcW" firstAttribute="centerX" secondItem="SVp-7u-dlL" secondAttribute="centerX" id="hbA-an-VdN"/>
+                                                        <constraint firstItem="nFY-az-OcW" firstAttribute="top" secondItem="SVp-7u-dlL" secondAttribute="top" constant="16" id="l6V-6i-qjd"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" name="CardBackground"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ewd-0a-1MK" secondAttribute="bottom" constant="24" id="7bM-6i-67f"/>
-                                            <constraint firstAttribute="trailing" secondItem="ewd-0a-1MK" secondAttribute="trailing" constant="16" id="Drg-Uc-Pzb"/>
-                                            <constraint firstItem="nFY-az-OcW" firstAttribute="centerX" secondItem="74k-Mc-yvt" secondAttribute="centerX" id="KGI-fj-PPM"/>
-                                            <constraint firstItem="nFY-az-OcW" firstAttribute="top" secondItem="74k-Mc-yvt" secondAttribute="top" constant="24" id="NCJ-Qi-rrU"/>
-                                            <constraint firstItem="ewd-0a-1MK" firstAttribute="leading" secondItem="74k-Mc-yvt" secondAttribute="leading" constant="16" id="WqL-do-Agz"/>
-                                            <constraint firstItem="nFY-az-OcW" firstAttribute="height" secondItem="74k-Mc-yvt" secondAttribute="height" multiplier="0.4" id="f0Y-wG-lG5"/>
-                                            <constraint firstItem="ewd-0a-1MK" firstAttribute="top" secondItem="nFY-az-OcW" secondAttribute="bottom" constant="32" id="rL2-rQ-DCR"/>
+                                            <constraint firstAttribute="trailing" secondItem="SVp-7u-dlL" secondAttribute="trailing" id="5ho-CN-HF1"/>
+                                            <constraint firstItem="SVp-7u-dlL" firstAttribute="top" secondItem="74k-Mc-yvt" secondAttribute="top" id="Rgc-4N-OOE"/>
+                                            <constraint firstAttribute="bottom" secondItem="SVp-7u-dlL" secondAttribute="bottom" id="Xhg-dO-zkG"/>
+                                            <constraint firstItem="SVp-7u-dlL" firstAttribute="leading" secondItem="74k-Mc-yvt" secondAttribute="leading" id="qKQ-bb-ecj"/>
                                         </constraints>
                                         <size key="customSize" width="240" height="320"/>
                                         <connections>
+                                            <outlet property="taskDescriptionLabel" destination="fKs-b6-u2Z" id="UNf-Ft-ikO"/>
                                             <outlet property="taskImageView" destination="nFY-az-OcW" id="tWC-uM-GgK"/>
                                             <outlet property="taskLabel" destination="Y8U-b4-rYL" id="0wq-HH-QDt"/>
                                             <segue destination="tPS-co-Zni" kind="presentation" id="l66-GY-nii"/>
@@ -732,7 +744,7 @@ super humble!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Grandma-mini" width="500" height="555"/>
+        <image name="aunt-uncle-mini" width="125" height="155.5"/>
         <image name="camera" width="500" height="409"/>
         <image name="challenge1" width="500" height="453"/>
         <image name="journey1" width="500" height="508"/>

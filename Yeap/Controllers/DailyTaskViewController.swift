@@ -13,9 +13,7 @@ class DailyTaskViewController: UIViewController, UICollectionViewDataSource, UIC
     
     @IBOutlet weak var taskCollectionView: UICollectionView!
     
-    fileprivate var tasks = Task.create()
-    
-    var challenges: [NSManagedObject] = []
+    fileprivate var tasks = Challenge.create()
     
     
     override func viewDidLoad() {
@@ -24,28 +22,12 @@ class DailyTaskViewController: UIViewController, UICollectionViewDataSource, UIC
         // Do any additional setup after loading the view.
         taskCollectionView.dataSource = self
         taskCollectionView.delegate = self
-        
-//        taskCollectionView.register(UINib.init(nibName: "MemeCell", bundle: nil), forCellWithReuseIdentifier: "MemeCell")
-        
-//        saveToCoreData()
-        loadFromData()
     }
     
     private func saveToCoreData() {
-        let object = CoreDataHelper.getModelObject(entityName: "Challenge")
-        object.setValue("Challenge 4", forKey: "title")
-        object.setValue("Are You Serious?", forKey: "reflection")
-        object.setValue(2, forKey: "level")
-        object.setValue(5, forKey: "exp")
-        CoreDataHelper.saveToCoreData()
     }
     
     private func loadFromData(){
-        let result = CoreDataHelper.fetchCoreData(entityName: "Challenge")
-        print("tes \(result)")
-        for data in result as! [NSManagedObject] {
-            print(data.value(forKey: "title") as! String)
-        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -59,6 +41,8 @@ class DailyTaskViewController: UIViewController, UICollectionViewDataSource, UIC
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         cell.taskLabel.text = tasks[indexPath.item].title
+        cell.taskImageView.image = tasks[indexPath.item].image
+        cell.taskDescriptionLabel.text = tasks[indexPath.item].description
     
         return cell
     }
