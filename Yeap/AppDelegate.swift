@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if launchedBefore{
             vc = mainStoryBoard.instantiateViewController(withIdentifier: "tabBarControllerStoryboard")
         } else {
-            vc = onBoardingStoryBoard.instantiateViewController(withIdentifier: "nameStoryBoard")
+            vc = onBoardingStoryBoard.instantiateViewController(withIdentifier: "navigationNameStoryBoard")
         }
         
 //        UserDefaults.standard.set(false, forKey: "hasLaunched")
