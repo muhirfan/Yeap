@@ -13,7 +13,7 @@
         <!--Onboarding Name View Controller-->
         <scene sceneID="WHw-wT-PEB">
             <objects>
-                <viewController id="OAR-JP-GJ3" customClass="OnboardingNameViewController" customModule="Yeap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="nameStoryBoard" id="OAR-JP-GJ3" customClass="OnboardingNameViewController" customModule="Yeap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R7J-fu-p5J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

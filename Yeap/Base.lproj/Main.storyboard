@@ -360,7 +360,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="journey1" translatesAutoresizingMaskIntoConstraints="NO" id="erT-gF-4pD">
-                                <rect key="frame" x="40" y="196.5" width="334" height="508"/>
+                                <rect key="frame" x="40" y="387" width="334" height="127"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhA-i5-cl0">
                                 <rect key="frame" x="40" y="112" width="35" height="36"/>
@@ -399,7 +399,7 @@ super humble!</string>
         <!--Tab Bar Controller-->
         <scene sceneID="e5e-Wt-Vgu">
             <objects>
-                <tabBarController id="u9s-fr-lTe" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarControllerStoryboard" id="u9s-fr-lTe" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JPy-Rc-VP7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -744,7 +744,7 @@ super humble!</string>
         <image name="aunt-uncle-mini" width="125" height="155.5"/>
         <image name="camera" width="500" height="409"/>
         <image name="challenge1" width="500" height="453"/>
-        <image name="journey1" width="500" height="508"/>
+        <image name="journey1" width="125" height="127"/>
         <namedColor name="CardBackground">
             <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

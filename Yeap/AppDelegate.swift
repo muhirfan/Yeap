@@ -44,6 +44,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /// Choose which storyboard we want to launch first. If the apps is never launched before, it will open onboarding, if not, it will launch main
+        let launchedBefore = UserDefaults.standard.bool(forKey: "hasLaunched")
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let onBoardingStoryBoard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var vc: UIViewController
+        
+        if launchedBefore{
+            vc = mainStoryBoard.instantiateViewController(withIdentifier: "tabBarControllerStoryboard")
+        } else {
+            vc = onBoardingStoryBoard.instantiateViewController(withIdentifier: "nameStoryBoard")
+        }
+        
+//        UserDefaults.standard.set(false, forKey: "hasLaunched")
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        /// End of line
+        
+        
         return true
     }
 
