@@ -36,6 +36,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onNameChanged:" destination="OAR-JP-GJ3" eventType="editingDidEnd" id="p5R-IW-O9I"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, We want" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlb-eD-zqX">
                                 <rect key="frame" x="24" y="68" width="366" height="36"/>
@@ -100,7 +103,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8K-jE-C4u">
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8K-jE-C4u">
                                 <rect key="frame" x="0.0" y="169" width="414" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select the most relevant status of your education." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-xC-6UO">
@@ -109,7 +112,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pea-QN-wEy">
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pea-QN-wEy">
                                 <rect key="frame" x="0.0" y="458" width="414" height="216"/>
                             </pickerView>
                         </subviews>
@@ -145,6 +148,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="educationPickerView" destination="Pea-QN-wEy" id="NHV-Eq-l0H"/>
+                        <outlet property="employmentPickerView" destination="B8K-jE-C4u" id="TE8-D6-KGm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPo-g8-Lka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,7 +290,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sFj-ge-H2r"/>
-        <segue reference="kOy-zQ-nGq"/>
+        <segue reference="60D-lI-8rq"/>
+        <segue reference="goO-Bk-8dJ"/>
     </inferredMetricsTieBreakers>
 </document>

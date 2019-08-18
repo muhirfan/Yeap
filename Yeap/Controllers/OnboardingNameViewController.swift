@@ -15,7 +15,9 @@ class OnboardingNameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onNameChanged(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
