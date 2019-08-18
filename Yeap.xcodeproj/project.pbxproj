@@ -45,6 +45,9 @@
 		BCD9412D2306AA1B003255F6 /* Advisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412C2306AA1B003255F6 /* Advisor.swift */; };
 		BCD9412F2306B237003255F6 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412E2306B237003255F6 /* Module.swift */; };
 		BCD94133230985B6003255F6 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD94132230985B6003255F6 /* Onboarding.storyboard */; };
+		BCD941352309FC7F003255F6 /* OnboardingNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD941342309FC7F003255F6 /* OnboardingNameViewController.swift */; };
+		BCD941372309FCA3003255F6 /* OnboardingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD941362309FCA3003255F6 /* OnboardingProfileViewController.swift */; };
+		BCD941392309FCBD003255F6 /* OnboardingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD941382309FCBD003255F6 /* OnboardingImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,9 @@
 		BCD9412C2306AA1B003255F6 /* Advisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Advisor.swift; path = Yeap/Advisor.swift; sourceTree = SOURCE_ROOT; };
 		BCD9412E2306B237003255F6 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Module.swift; path = Yeap/Module.swift; sourceTree = SOURCE_ROOT; };
 		BCD94132230985B6003255F6 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		BCD941342309FC7F003255F6 /* OnboardingNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNameViewController.swift; sourceTree = "<group>"; };
+		BCD941362309FCA3003255F6 /* OnboardingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProfileViewController.swift; sourceTree = "<group>"; };
+		BCD941382309FCBD003255F6 /* OnboardingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,9 @@
 				3965891622FAA94F008B7C63 /* DailyTaskViewController.swift */,
 				3965892622FABA0B008B7C63 /* SettingTableViewController.swift */,
 				BC48C56522FD5BB00095E45D /* SubmitChallengeViewController.swift */,
+				BCD941342309FC7F003255F6 /* OnboardingNameViewController.swift */,
+				BCD941362309FCA3003255F6 /* OnboardingProfileViewController.swift */,
+				BCD941382309FCBD003255F6 /* OnboardingImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -410,10 +419,13 @@
 				390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */,
 				3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */,
 				3965892022FAAEFA008B7C63 /* firstCellTableViewCell.swift in Sources */,
+				BCD941352309FC7F003255F6 /* OnboardingNameViewController.swift in Sources */,
+				BCD941372309FCA3003255F6 /* OnboardingProfileViewController.swift in Sources */,
 				3965891722FAA94F008B7C63 /* DailyTaskViewController.swift in Sources */,
 				BC04224222FAB12500D10B07 /* DailyTaskCollectionViewCell.swift in Sources */,
 				BC02E18122FC06D5007FB216 /* Data.xcdatamodeld in Sources */,
 				3965891122F9879E008B7C63 /* colors.swift in Sources */,
+				BCD941392309FCBD003255F6 /* OnboardingImageViewController.swift in Sources */,
 				BCD9412F2306B237003255F6 /* Module.swift in Sources */,
 				BC48C56A23038DAA0095E45D /* CoreDataHelper.swift in Sources */,
 				BC04224422FAB3D200D10B07 /* Task.swift in Sources */,

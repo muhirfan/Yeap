@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding Name View Controller-->
         <scene sceneID="WHw-wT-PEB">
             <objects>
-                <viewController id="OAR-JP-GJ3" sceneMemberID="viewController">
+                <viewController id="OAR-JP-GJ3" customClass="OnboardingNameViewController" customModule="Yeap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R7J-fu-p5J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="112" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboarding Profile View Controller-->
         <scene sceneID="c8s-fc-81g">
             <objects>
-                <viewController id="0gz-Yd-idr" sceneMemberID="viewController">
+                <viewController id="0gz-Yd-idr" customClass="OnboardingProfileViewController" customModule="Yeap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yce-gE-ntm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="836" y="124"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboarding Image View Controller-->
         <scene sceneID="jMf-gb-Qb7">
             <objects>
-                <viewController id="Ryl-RQ-BsJ" sceneMemberID="viewController">
+                <viewController id="Ryl-RQ-BsJ" customClass="OnboardingImageViewController" customModule="Yeap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fUu-GL-Glg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
