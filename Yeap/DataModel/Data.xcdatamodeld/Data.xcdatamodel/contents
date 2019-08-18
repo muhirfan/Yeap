@@ -5,31 +5,13 @@
         <attribute name="employmentStatus" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
-        <relationship name="advisor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Advisor" inverseName="account" inverseEntity="Advisor" syncable="YES"/>
         <relationship name="journey" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Journey" inverseName="account" inverseEntity="Journey" syncable="YES"/>
         <relationship name="story" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Story" inverseName="account" inverseEntity="Story" syncable="YES"/>
-    </entity>
-    <entity name="Advisor" representedClassName="Advisor" syncable="YES" codeGenerationType="class">
-        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="account" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Account" inverseName="advisor" inverseEntity="Account" syncable="YES"/>
-    </entity>
-    <entity name="Challenge" representedClassName="Challenge" syncable="YES" codeGenerationType="class">
-        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="reflection" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="Goal" representedClassName="Goal" syncable="YES" codeGenerationType="class">
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="toBeMessage" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="journey" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Journey" inverseName="goal" inverseEntity="Journey" syncable="YES"/>
     </entity>
     <entity name="Journey" representedClassName="Journey" syncable="YES" codeGenerationType="class">
         <attribute name="currentExp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="currentLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="journey" inverseEntity="Account" syncable="YES"/>
-        <relationship name="goal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goal" inverseName="journey" inverseEntity="Goal" syncable="YES"/>
     </entity>
     <entity name="Story" representedClassName="Story" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -38,11 +20,8 @@
         <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="story" inverseEntity="Account" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Account" positionX="200.515625" positionY="-71.86328125" width="128" height="150"/>
-        <element name="Advisor" positionX="108.4609375" positionY="217.91015625" width="128" height="90"/>
-        <element name="Challenge" positionX="392.86328125" positionY="123.63671875" width="128" height="105"/>
-        <element name="Goal" positionX="584.953125" positionY="-59.86328125" width="131.5078125" height="88"/>
-        <element name="Journey" positionX="384.53515625" positionY="-195.375" width="128" height="105"/>
+        <element name="Account" positionX="200.515625" positionY="-71.86328125" width="128" height="133"/>
+        <element name="Journey" positionX="384.53515625" positionY="-195.375" width="128" height="88"/>
         <element name="Story" positionX="-33.8125" positionY="35.60546875" width="128" height="103"/>
     </elements>
 </model>

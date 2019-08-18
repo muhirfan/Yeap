@@ -41,6 +41,9 @@
 		BC91133522F8F85800383393 /* YeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91133422F8F85800383393 /* YeapTests.swift */; };
 		BC91134022F8F85800383393 /* YeapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91133F22F8F85800383393 /* YeapUITests.swift */; };
 		BCD9412923055D3D003255F6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD9412823055D3D003255F6 /* Colors.xcassets */; };
+		BCD9412B2306A65E003255F6 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412A2306A65E003255F6 /* Challenge.swift */; };
+		BCD9412D2306AA1B003255F6 /* Advisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412C2306AA1B003255F6 /* Advisor.swift */; };
+		BCD9412F2306B237003255F6 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412E2306B237003255F6 /* Module.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,9 @@
 		BC91133F22F8F85800383393 /* YeapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeapUITests.swift; sourceTree = "<group>"; };
 		BC91134122F8F85800383393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD9412823055D3D003255F6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BCD9412A2306A65E003255F6 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Challenge.swift; path = Yeap/Challenge.swift; sourceTree = SOURCE_ROOT; };
+		BCD9412C2306AA1B003255F6 /* Advisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Advisor.swift; path = Yeap/Advisor.swift; sourceTree = SOURCE_ROOT; };
+		BCD9412E2306B237003255F6 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Module.swift; path = Yeap/Module.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,9 @@
 				BC04224322FAB3D200D10B07 /* Task.swift */,
 				390064AD22FBCD41004189E6 /* camera.swift */,
 				39A640C6230685F1009E4472 /* DailyChallengeData.swift */,
+				BCD9412A2306A65E003255F6 /* Challenge.swift */,
+				BCD9412C2306AA1B003255F6 /* Advisor.swift */,
+				BCD9412E2306B237003255F6 /* Module.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -392,6 +401,7 @@
 				390064AE22FBCD41004189E6 /* camera.swift in Sources */,
 				BC48C5712303E7F50095E45D /* ChallengeCollectionViewCell.swift in Sources */,
 				BC48C56622FD5BB00095E45D /* SubmitChallengeViewController.swift in Sources */,
+				BCD9412B2306A65E003255F6 /* Challenge.swift in Sources */,
 				3965891B22FAAE67008B7C63 /* StoryTableViewController.swift in Sources */,
 				390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */,
 				3965891522FAA925008B7C63 /* JourneyViewController.swift in Sources */,
@@ -400,8 +410,10 @@
 				BC04224222FAB12500D10B07 /* DailyTaskCollectionViewCell.swift in Sources */,
 				BC02E18122FC06D5007FB216 /* Data.xcdatamodeld in Sources */,
 				3965891122F9879E008B7C63 /* colors.swift in Sources */,
+				BCD9412F2306B237003255F6 /* Module.swift in Sources */,
 				BC48C56A23038DAA0095E45D /* CoreDataHelper.swift in Sources */,
 				BC04224422FAB3D200D10B07 /* Task.swift in Sources */,
+				BCD9412D2306AA1B003255F6 /* Advisor.swift in Sources */,
 				BC91132022F8F85600383393 /* AppDelegate.swift in Sources */,
 				3900650322FC2E1B004189E6 /* AdvisorViewController.swift in Sources */,
 				3965892422FAAF37008B7C63 /* StoryTableViewCell.swift in Sources */,
