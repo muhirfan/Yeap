@@ -44,6 +44,7 @@
 		BCD9412B2306A65E003255F6 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412A2306A65E003255F6 /* Challenge.swift */; };
 		BCD9412D2306AA1B003255F6 /* Advisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412C2306AA1B003255F6 /* Advisor.swift */; };
 		BCD9412F2306B237003255F6 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9412E2306B237003255F6 /* Module.swift */; };
+		BCD94133230985B6003255F6 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD94132230985B6003255F6 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		BCD9412A2306A65E003255F6 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Challenge.swift; path = Yeap/Challenge.swift; sourceTree = SOURCE_ROOT; };
 		BCD9412C2306AA1B003255F6 /* Advisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Advisor.swift; path = Yeap/Advisor.swift; sourceTree = SOURCE_ROOT; };
 		BCD9412E2306B237003255F6 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Module.swift; path = Yeap/Module.swift; sourceTree = SOURCE_ROOT; };
+		BCD94132230985B6003255F6 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				BC91132822F8F85800383393 /* LaunchScreen.storyboard */,
 				BC91132B22F8F85800383393 /* Info.plist */,
 				BCD9412823055D3D003255F6 /* Colors.xcassets */,
+				BCD94132230985B6003255F6 /* Onboarding.storyboard */,
 			);
 			path = Yeap;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				BC48C5722303E7F50095E45D /* ChallengeCollectionViewCell.xib in Resources */,
 				BC91132A22F8F85800383393 /* LaunchScreen.storyboard in Resources */,
 				BC91132722F8F85800383393 /* Assets.xcassets in Resources */,
+				BCD94133230985B6003255F6 /* Onboarding.storyboard in Resources */,
 				3900650122FC2CE8004189E6 /* Advisor.storyboard in Resources */,
 				390064F622FBF3F7004189E6 /* PickerTableViewCell.xib in Resources */,
 				3965892122FAAEFA008B7C63 /* firstCellTableViewCell.xib in Resources */,
