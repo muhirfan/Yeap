@@ -212,12 +212,24 @@
                     <navigationItem key="navigationItem" id="gKa-Il-s5H">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="3so-u9-w5s">
                             <color key="tintColor" name="TextColor1"/>
+                            <connections>
+                                <action selector="onSaveClicked:" destination="Ryl-RQ-BsJ" id="Lds-yA-8eB"/>
+                                <segue destination="kK5-1O-CAC" kind="showDetail" id="5vt-j2-Gtu"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Md5-BA-ZcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4246.376811594203" y="122.54464285714285"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="BKa-4J-uoU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="tabBarControllerStoryboard" storyboardName="Main" id="kK5-1O-CAC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAv-0A-oiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4922" y="14"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PGV-rV-eQi">

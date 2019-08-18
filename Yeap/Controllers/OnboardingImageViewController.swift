@@ -16,7 +16,10 @@ class OnboardingImageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onSaveClicked(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

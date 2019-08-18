@@ -59,6 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             vc = onBoardingStoryBoard.instantiateViewController(withIdentifier: "navigationNameStoryBoard")
         }
         
+//        vc = mainStoryBoard.instantiateViewController(withIdentifier: "tabBarControllerStoryboard")
+        
 //        UserDefaults.standard.set(false, forKey: "hasLaunched")
         
         self.window?.rootViewController = vc
