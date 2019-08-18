@@ -74,6 +74,14 @@ class StoryTableViewController: UITableViewController {
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "storyCell", for: indexPath) as! StoryTableViewCell
             cell.titleStoryCellLabel.text = "Day 1"
+            cell.dateStoryCellLabel.text = " 18 Agustus 2019"
+            cell.storyReflectionLongLabel.text = "Go visit someone who need comfort, and hug them"
+            cell.storyReflectionLongLabel.sizeToFit()
+            cell.storyReflectionLongLabel.numberOfLines = 0
+            cell.storyReflectionLabel.text = "Kind"
+            cell.storyCellImageView.image = UIImage(named: "visitGrandma")
+            cell.storyCellImageView.contentMode = .scaleAspectFill
+            cell.storyCellImageView.backgroundColor = .clear
             cell.accessoryType = .disclosureIndicator
             cell.selectionStyle = .gray
             return cell
