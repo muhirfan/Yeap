@@ -19,21 +19,23 @@ struct Advisor {
     var name: String = ""
     var image: UIImage?
     var imageMini: UIImage?
+    var advise: String
     
-    init(id: Int, name: String, imageName: String, imageMiniName: String) {
+    init(id: Int, name: String, imageName: String, imageMiniName: String, advise: String) {
         self.id = id
         self.name = name
         self.image = UIImage(imageLiteralResourceName: imageName)
         self.imageMini = UIImage(imageLiteralResourceName: imageMiniName)
+        self.advise = advise
     }
     
     static func create() -> [Advisor]
     {
         return [
-            Advisor(id: 1, name: "Swag Grandma", imageName: "grandma", imageMiniName: "grandma-mini"),
-            Advisor(id: 2, name: "Lady Coach", imageName: "coach", imageMiniName: "coach-mini"),
-            Advisor(id: 3, name: "Cool aunty and uncle", imageName: "aunt-uncle-mini", imageMiniName: "aunt-uncle-mini"),
-            Advisor(id: 4, name: "Drill Sergeant", imageName: "sergeant", imageMiniName: "sergeant-mini")
+            Advisor(id: 1, name: "Swag Grandma", imageName: "grandma", imageMiniName: "grandma-mini", advise: "Try it and worst case, you end up no worse off than you started, and learn from it"),
+            Advisor(id: 2, name: "Lady Coach", imageName: "coach", imageMiniName: "coach-mini", advise: "You’ve got to keep chopping wood. Don’t dwell on the past and don’t look ahead. Just chop on the moment."),
+            Advisor(id: 3, name: "Cool aunty and uncle", imageName: "aunt-uncle-mini", imageMiniName: "aunt-uncle-mini", advise: "Life is yours. You own it, take control and grow it."),
+            Advisor(id: 4, name: "Drill Sergeant", imageName: "sergeant", imageMiniName: "sergeant-mini", advise: "Go away, you smell like failure and corn chips.")
         ]
     }
 }

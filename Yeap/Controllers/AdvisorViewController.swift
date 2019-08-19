@@ -68,14 +68,23 @@ class AdvisorViewController: UIViewController {
     }
     
     @objc func saveAdvisorToCoreData(){
+//        if selectedAdvisor == nil{
+//            let alert = UIAlertController(title: "Please select your advisor", message: nil, preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//            self.present(alert, animated: true)
+//        } else{
+//        saveToCoreData()
+//        print("save")
+//        self.dismiss(animated: true, completion: nil)
+//        }
+        
         if selectedAdvisor == nil{
             let alert = UIAlertController(title: "Please select your advisor", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         } else{
-        saveToCoreData()
-        print("save")
-        self.dismiss(animated: true, completion: nil)
+            UserDefaults.standard.set((selectedAdvisor ?? 0+1), forKey: "advisor")
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
