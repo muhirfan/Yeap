@@ -49,22 +49,21 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaR-Uf-caF">
-                                <rect key="frame" x="24" y="298" width="366" height="64"/>
+                                <rect key="frame" x="24" y="298" width="366" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Daily Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpw-nW-3bj">
-                                        <rect key="frame" x="0.0" y="24" width="180" height="24"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <rect key="frame" x="0.0" y="36" width="266" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNX-bD-Z4K">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="24"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="JNX-bD-Z4K" firstAttribute="leading" secondItem="oaR-Uf-caF" secondAttribute="leading" id="64k-uK-Mo7"/>
                                     <constraint firstAttribute="bottom" secondItem="qpw-nW-3bj" secondAttribute="bottom" priority="750" constant="16" id="PaZ-5A-EJp"/>
@@ -74,8 +73,8 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LqZ-Vc-1h8">
-                                <rect key="frame" x="24" y="386" width="414" height="451"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="24" y="410" width="414" height="427"/>
+                                <color key="backgroundColor" name="AppBackground"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rHn-HL-5G0">
                                     <size key="itemSize" width="175" height="266"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -84,7 +83,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Task Cell" id="74k-Mc-yvt" customClass="DailyTaskCollectionViewCell" customModule="Yeap" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65.5" width="240" height="320"/>
+                                        <rect key="frame" x="0.0" y="53.5" width="240" height="320"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
@@ -156,7 +155,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="AppBackground"/>
                         <constraints>
                             <constraint firstItem="oaR-Uf-caF" firstAttribute="trailing" secondItem="HI9-ZC-Wra" secondAttribute="trailing" id="5ot-QG-FBF"/>
                             <constraint firstItem="LqZ-Vc-1h8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="24" id="DQq-gC-zp9"/>
@@ -640,9 +639,14 @@ super humble!</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YTn-NX-VN3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Daily Task" id="oQl-V0-iTb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xJg-AT-iRg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="xJg-AT-iRg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="TextColor1"/>
+                        <color key="barTintColor" name="AppBackground"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextColor1"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -745,8 +749,14 @@ super humble!</string>
         <image name="camera" width="500" height="409"/>
         <image name="challenge1" width="500" height="453"/>
         <image name="journey1" width="125" height="127"/>
+        <namedColor name="AppBackground">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="CardBackground">
             <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor1">
+            <color red="0.027450980392156862" green="0.13333333333333333" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
