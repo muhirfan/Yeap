@@ -72,6 +72,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="2XN-3a-wsa" id="KWF-Rh-Ipz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZk-fE-wxU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

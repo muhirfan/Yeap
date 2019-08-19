@@ -70,5 +70,10 @@ class OnboardingProfileViewController: UIViewController, UIPickerViewDelegate, U
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        UserDefaults.standard.set(selectedEmploymentStatus, forKey: "employmentStatus")
+        UserDefaults.standard.set(selectedEducation, forKey: "education")
+    }
 
 }

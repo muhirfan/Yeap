@@ -9,10 +9,12 @@
 import UIKit
 
 class OnboardingNameViewController: UIViewController {
-
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        nameTextField.text = UserDefaults.standard.string(forKey: "fullName")
     }
     
     @IBAction func onNameChanged(_ sender: Any) {
@@ -27,5 +29,9 @@ class OnboardingNameViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        UserDefaults.standard.set(nameTextField.text, forKey: "fullName")
+    }
 
 }
