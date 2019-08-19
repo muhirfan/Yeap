@@ -364,7 +364,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="journey1" translatesAutoresizingMaskIntoConstraints="NO" id="erT-gF-4pD">
-                                <rect key="frame" x="40" y="387" width="334" height="127"/>
+                                <rect key="frame" x="40" y="283.5" width="334" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="erT-gF-4pD" secondAttribute="height" multiplier="1:1" id="dsT-24-qXa"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhA-i5-cl0">
                                 <rect key="frame" x="40" y="112" width="35" height="36"/>
@@ -380,13 +383,22 @@ super humble!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default photo" translatesAutoresizingMaskIntoConstraints="NO" id="wGt-nS-vuC">
+                                <rect key="frame" x="163" y="406.5" width="88" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="8a8-bO-yS9"/>
+                                    <constraint firstAttribute="height" constant="88" id="Qnr-LP-bCd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="AppBackground"/>
                         <constraints>
                             <constraint firstItem="3uY-YW-DvF" firstAttribute="trailing" secondItem="erT-gF-4pD" secondAttribute="trailing" constant="40" id="Ayc-J6-QKM"/>
                             <constraint firstItem="erT-gF-4pD" firstAttribute="centerY" secondItem="3uY-YW-DvF" secondAttribute="centerY" id="Cim-kq-LNt"/>
                             <constraint firstItem="erT-gF-4pD" firstAttribute="leading" secondItem="3uY-YW-DvF" secondAttribute="leading" constant="40" id="Ct0-S8-tr5"/>
+                            <constraint firstItem="wGt-nS-vuC" firstAttribute="centerY" secondItem="erT-gF-4pD" secondAttribute="centerY" id="DEO-Q2-iI1"/>
                             <constraint firstItem="YhA-i5-cl0" firstAttribute="leading" secondItem="erT-gF-4pD" secondAttribute="leading" id="I2A-AA-nnT"/>
+                            <constraint firstItem="wGt-nS-vuC" firstAttribute="centerX" secondItem="erT-gF-4pD" secondAttribute="centerX" id="SbI-Ri-PRa"/>
                             <constraint firstItem="5SU-Tc-gd6" firstAttribute="leading" secondItem="YhA-i5-cl0" secondAttribute="leading" id="ZQr-QV-50P"/>
                             <constraint firstItem="erT-gF-4pD" firstAttribute="centerX" secondItem="3uY-YW-DvF" secondAttribute="centerX" id="fr1-Fm-whU"/>
                             <constraint firstItem="5SU-Tc-gd6" firstAttribute="top" secondItem="YhA-i5-cl0" secondAttribute="bottom" constant="8" id="gXZ-Iz-iMF"/>
@@ -744,9 +756,14 @@ super humble!</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lxq-UA-J7O" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Journey" id="LT3-sX-ytu"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NwL-wp-7eC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="NwL-wp-7eC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="TextColor1"/>
+                        <color key="barTintColor" name="AppBackground"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextColor1"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -798,12 +815,16 @@ super humble!</string>
         <image name="aunt-uncle-mini" width="125" height="155.5"/>
         <image name="camera" width="500" height="409"/>
         <image name="challenge1" width="500" height="453"/>
+        <image name="default photo" width="500" height="500"/>
         <image name="journey1" width="125" height="127"/>
         <namedColor name="AppBackground">
             <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CardBackground">
             <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor1">
+            <color red="0.027450980392156862" green="0.13333333333333333" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor1">
             <color red="0.027450980392156862" green="0.13333333333333333" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
