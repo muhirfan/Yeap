@@ -186,6 +186,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-3t-QL2">
+                                <rect key="frame" x="20" y="216" width="370" height="366"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choose photo" translatesAutoresizingMaskIntoConstraints="NO" id="F29-X2-PP2">
                                 <rect key="frame" x="24" y="216" width="366" height="366"/>
                                 <constraints>
@@ -195,6 +199,9 @@
                         </subviews>
                         <color key="backgroundColor" name="AppBackground"/>
                         <constraints>
+                            <constraint firstItem="bKi-3t-QL2" firstAttribute="centerX" secondItem="F29-X2-PP2" secondAttribute="centerX" constant="-2" id="1N7-13-xpk"/>
+                            <constraint firstItem="bKi-3t-QL2" firstAttribute="width" secondItem="F29-X2-PP2" secondAttribute="width" constant="4" id="3Ot-Q2-SOy"/>
+                            <constraint firstItem="bKi-3t-QL2" firstAttribute="height" secondItem="F29-X2-PP2" secondAttribute="height" id="5hM-j1-vyj"/>
                             <constraint firstItem="d8y-DP-Qg2" firstAttribute="trailing" secondItem="HeD-6d-HAR" secondAttribute="trailing" constant="24" id="BYz-kY-2Su"/>
                             <constraint firstItem="AIf-IG-Y9z" firstAttribute="leading" secondItem="d8y-DP-Qg2" secondAttribute="leading" constant="24" id="C4t-pL-OoP"/>
                             <constraint firstItem="li2-x4-0Go" firstAttribute="top" secondItem="HeD-6d-HAR" secondAttribute="bottom" constant="8" id="MZu-kM-Lbe"/>
@@ -209,6 +216,7 @@
                             <constraint firstItem="d8y-DP-Qg2" firstAttribute="trailing" secondItem="F29-X2-PP2" secondAttribute="trailing" constant="24" id="tkU-Wq-ReC"/>
                             <constraint firstItem="li2-x4-0Go" firstAttribute="top" secondItem="HeD-6d-HAR" secondAttribute="bottom" constant="8" id="wf3-da-m45"/>
                             <constraint firstItem="HeD-6d-HAR" firstAttribute="top" secondItem="d8y-DP-Qg2" secondAttribute="top" constant="24" id="x9Z-mb-dB1"/>
+                            <constraint firstItem="bKi-3t-QL2" firstAttribute="top" secondItem="F29-X2-PP2" secondAttribute="top" id="zbj-ha-7RN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d8y-DP-Qg2"/>
                     </view>
@@ -221,6 +229,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="choosePhoto" destination="F29-X2-PP2" id="Sj3-TO-dMT"/>
+                        <outlet property="imageTapable" destination="bKi-3t-QL2" id="ffY-mS-vqs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Md5-BA-ZcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -305,7 +317,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="60D-lI-8rq"/>
+        <segue reference="sFj-ge-H2r"/>
         <segue reference="goO-Bk-8dJ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,19 +7,45 @@
 //
 
 import UIKit
+import CoreData
 
 class OnboardingImageViewController: UIViewController {
 
+    @IBOutlet weak var imageTapable: UIView!
+    @IBOutlet weak var choosePhoto: UIImageView!
+    var imagePicker: ImagePicker!
+    var image : UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageTapable.backgroundColor = .clear
+        
+        let tap  = UITapGestureRecognizer(target: self, action: #selector(proceedToGetPhoto(_:)))
+        imageTapable.addGestureRecognizer(tap)
+        self.imagePicker = ImagePicker(presentationController: self , delegate: self)
+        
+    }
+    
+    @objc func proceedToGetPhoto(_ sender: UIView){
+        self.imagePicker.present(from: sender)
     }
     
     @IBAction func onSaveClicked(_ sender: Any) {
         
     }
     
+    @objc func savePhoto(){
+        let object = CoreDataHelper.getModelObject(entityName: "Account")
+//        object.setValue(edu, forKey: "education")
+//        object.setValue(employmentStatus, forKey: "employmentStatus")
+//        object.setValue(name, forKey: "fullName")
+        
+        if let image = self.image{
+            let newImage = image.pngData()! as NSData
+            object.setValue(newImage, forKey: "image")
+        }
+        CoreDataHelper.saveToCoreData()
+    }
     /*
     // MARK: - Navigation
 
@@ -30,4 +56,13 @@ class OnboardingImageViewController: UIViewController {
     }
     */
 
+}
+extension OnboardingImageViewController: ImagePickerDelegate {
+    
+    func didSelect(image: UIImage?) {
+        self.image = image!
+        self.choosePhoto.image = image
+        viewDidLoad()
+    }
+    
 }
