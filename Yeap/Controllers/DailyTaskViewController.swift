@@ -12,8 +12,13 @@ import CoreData
 class DailyTaskViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var taskCollectionView: UICollectionView!
+    @IBOutlet weak var AdvisorAdviseTextview: UITextView!
+    @IBOutlet weak var advisorImageView: UIImageView!
     
     fileprivate var tasks = Challenge.create()
+    
+    var advisors = Advisor.create()
+    var selectedAdvisor: Int = 1
     
     
     override func viewDidLoad() {
@@ -22,6 +27,10 @@ class DailyTaskViewController: UIViewController, UICollectionViewDataSource, UIC
         // Do any additional setup after loading the view.
         taskCollectionView.dataSource = self
         taskCollectionView.delegate = self
+        selectedAdvisor = UserDefaults.standard.integer(forKey: "advisor")
+        AdvisorAdviseTextview.text = advisors[selectedAdvisor].advise
+        advisorImageView.image = advisors[selectedAdvisor].imageMini
+        
     }
     
     private func saveToCoreData() {

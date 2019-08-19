@@ -28,7 +28,7 @@
                                             <constraint firstAttribute="width" secondItem="tes-9b-ZEM" secondAttribute="height" multiplier="3:4" id="EL8-if-dp7"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Try it and worst case, you end up no worse off than you started, and learn from it sadsadsa asd sad sa asdsa d&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Ti-b5-nqR">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Try it and worst case, you end up no worse off than you started, and learn from it&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Ti-b5-nqR">
                                         <rect key="frame" x="107.5" y="16" width="250.5" height="106"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -172,6 +172,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Daily Task" id="BTf-3t-5LC"/>
                     <connections>
+                        <outlet property="AdvisorAdviseTextview" destination="4Ti-b5-nqR" id="c3g-kJ-2Ef"/>
+                        <outlet property="advisorImageView" destination="tes-9b-ZEM" id="KZ8-He-oX7"/>
                         <outlet property="taskCollectionView" destination="LqZ-Vc-1h8" id="1tI-mf-MQ8"/>
                     </connections>
                 </viewController>
