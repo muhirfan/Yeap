@@ -23,6 +23,7 @@ class OnboardingImageViewController: UIViewController {
         let tap  = UITapGestureRecognizer(target: self, action: #selector(proceedToGetPhoto(_:)))
         imageTapable.addGestureRecognizer(tap)
         self.imagePicker = ImagePicker(presentationController: self , delegate: self)
+        imageTapable.layer.cornerRadius = 185
         
     }
     
