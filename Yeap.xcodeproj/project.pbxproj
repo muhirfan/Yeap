@@ -49,6 +49,8 @@
 		BCD941372309FCA3003255F6 /* OnboardingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD941362309FCA3003255F6 /* OnboardingProfileViewController.swift */; };
 		BCD941392309FCBD003255F6 /* OnboardingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD941382309FCBD003255F6 /* OnboardingImageViewController.swift */; };
 		BCD9413B230A14DE003255F6 /* Modul.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD9413A230A14DE003255F6 /* Modul.storyboard */; };
+		BCD9413D230A2172003255F6 /* SubmitChallengeReflection1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9413C230A2172003255F6 /* SubmitChallengeReflection1ViewController.swift */; };
+		BCD9413F230A2189003255F6 /* SubmitChallengeReflection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9413E230A2189003255F6 /* SubmitChallengeReflection2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		BCD941362309FCA3003255F6 /* OnboardingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProfileViewController.swift; sourceTree = "<group>"; };
 		BCD941382309FCBD003255F6 /* OnboardingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingImageViewController.swift; sourceTree = "<group>"; };
 		BCD9413A230A14DE003255F6 /* Modul.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Modul.storyboard; sourceTree = "<group>"; };
+		BCD9413C230A2172003255F6 /* SubmitChallengeReflection1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallengeReflection1ViewController.swift; sourceTree = "<group>"; };
+		BCD9413E230A2189003255F6 /* SubmitChallengeReflection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallengeReflection2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +270,8 @@
 				BCD941342309FC7F003255F6 /* OnboardingNameViewController.swift */,
 				BCD941362309FCA3003255F6 /* OnboardingProfileViewController.swift */,
 				BCD941382309FCBD003255F6 /* OnboardingImageViewController.swift */,
+				BCD9413C230A2172003255F6 /* SubmitChallengeReflection1ViewController.swift */,
+				BCD9413E230A2189003255F6 /* SubmitChallengeReflection2ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -414,10 +420,12 @@
 				390064AB22FBC28A004189E6 /* NameSettingTableViewCell.swift in Sources */,
 				3965892722FABA0B008B7C63 /* SettingTableViewController.swift in Sources */,
 				390AF2892303BBBD002A87BA /* StoryPageViewController.swift in Sources */,
+				BCD9413D230A2172003255F6 /* SubmitChallengeReflection1ViewController.swift in Sources */,
 				390064F522FBF3F7004189E6 /* PickerTableViewCell.swift in Sources */,
 				390064AE22FBCD41004189E6 /* camera.swift in Sources */,
 				BC48C5712303E7F50095E45D /* ChallengeCollectionViewCell.swift in Sources */,
 				BC48C56622FD5BB00095E45D /* SubmitChallengeViewController.swift in Sources */,
+				BCD9413F230A2189003255F6 /* SubmitChallengeReflection2ViewController.swift in Sources */,
 				BCD9412B2306A65E003255F6 /* Challenge.swift in Sources */,
 				3965891B22FAAE67008B7C63 /* StoryTableViewController.swift in Sources */,
 				390064F922FC081C004189E6 /* ReuseableLabelButtonTableViewCell.swift in Sources */,
